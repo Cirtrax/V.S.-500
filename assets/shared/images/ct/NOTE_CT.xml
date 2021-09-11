@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="NOTE_CT.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="arrow static2 instance 10000" x="0" y="0" width="161" height="164"/>
+	<SubTexture name="arrow static2 instance 20000" x="161" y="0" width="164" height="161"/>
+	<SubTexture name="arrow static2 instance 30000" x="325" y="0" width="164" height="160"/>
+	<SubTexture name="arrow static2 instance 40000" x="489" y="0" width="161" height="164"/>
+	<SubTexture name="blue hold instance 10000" x="650" y="0" width="51" height="44"/>
+	<SubTexture name="blue hold instance 20000" x="650" y="0" width="51" height="44"/>
+	<SubTexture name="blue tail instance 10000" x="701" y="0" width="51" height="64"/>
+	<SubTexture name="blue tail instance 20000" x="701" y="0" width="51" height="64"/>
+	<SubTexture name="blue_note instance 10000" x="752" y="0" width="164" height="160"/>
+	<SubTexture name="blue_note_confirm instance 10000" x="916" y="0" width="212" height="208"/>
+	<SubTexture name="blue_press instance 10000" x="1128" y="0" width="164" height="161"/>
+	<SubTexture name="green hold instance 10000" x="1292" y="0" width="51" height="44"/>
+	<SubTexture name="green hold instance 20000" x="1292" y="0" width="51" height="44"/>
+	<SubTexture name="green tail instance 10000" x="1343" y="0" width="51" height="64"/>
+	<SubTexture name="green tail instance 20000" x="1343" y="0" width="51" height="64"/>
+	<SubTexture name="green_note instance 10000" x="1394" y="0" width="163" height="160"/>
+	<SubTexture name="green_note_confirm instance 10000" x="1557" y="0" width="205" height="201"/>
+	<SubTexture name="green_press instance 10000" x="1762" y="0" width="163" height="161"/>
+	<SubTexture name="purple hold instance 10000" x="1925" y="0" width="51" height="44"/>
+	<SubTexture name="purple hold instance 20000" x="1925" y="0" width="51" height="44"/>
+	<SubTexture name="purple tail instance 10000" x="1976" y="0" width="51" height="64"/>
+	<SubTexture name="purple tail instance 20000" x="1976" y="0" width="51" height="64"/>
+	<SubTexture name="purple_note instance 10000" x="0" y="208" width="161" height="163"/>
+	<SubTexture name="purple_note_confirm instance 10000" x="161" y="208" width="191" height="195"/>
+	<SubTexture name="purple_press instance 10000" x="352" y="208" width="160" height="164"/>
+	<SubTexture name="red hold instance 10000" x="512" y="208" width="51" height="44"/>
+	<SubTexture name="red hold instance 20000" x="512" y="208" width="51" height="44"/>
+	<SubTexture name="red tail instance 10000" x="563" y="208" width="51" height="64"/>
+	<SubTexture name="red tail instance 20000" x="563" y="208" width="51" height="64"/>
+	<SubTexture name="red_note instance 10000" x="614" y="208" width="160" height="163"/>
+	<SubTexture name="red_note_confirm instance 10000" x="774" y="208" width="204" height="209"/>
+	<SubTexture name="red_note_confirm instance 10001" x="978" y="208" width="182" height="187" frameX="-9" frameY="-9" frameWidth="204" frameHeight="209"/>
+	<SubTexture name="red_note_confirm instance 10002" x="978" y="208" width="182" height="187" frameX="-9" frameY="-9" frameWidth="204" frameHeight="209"/>
+	<SubTexture name="red_note_confirm instance 10003" x="978" y="208" width="182" height="187" frameX="-9" frameY="-9" frameWidth="204" frameHeight="209"/>
+	<SubTexture name="red_press instance 10000" x="1160" y="208" width="161" height="164"/>
+</TextureAtlas>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ct_anger1.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ct_cube_anger_lol down instance 10000" x="0" y="0" width="405" height="247" frameX="0" frameY="-9" frameWidth="405" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol down instance 10001" x="0" y="0" width="405" height="247" frameX="0" frameY="-9" frameWidth="405" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol down instance 10002" x="405" y="0" width="401" height="256" frameX="0" frameY="0" frameWidth="405" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol down instance 10003" x="405" y="0" width="401" height="256" frameX="0" frameY="0" frameWidth="405" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol down instance 10004" x="405" y="0" width="401" height="256" frameX="0" frameY="0" frameWidth="405" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol down instance 10005" x="405" y="0" width="401" height="256" frameX="0" frameY="0" frameWidth="405" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol down instance 10006" x="405" y="0" width="401" height="256" frameX="0" frameY="0" frameWidth="405" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol down instance 10007" x="405" y="0" width="401" height="256" frameX="0" frameY="0" frameWidth="405" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol down instance 10008" x="405" y="0" width="401" height="256" frameX="0" frameY="0" frameWidth="405" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol instance 10000" x="806" y="0" width="407" height="262" frameX="-1" frameY="0" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10001" x="1213" y="0" width="406" height="262" frameX="-1" frameY="0" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10002" x="1619" y="0" width="401" height="261" frameX="-1" frameY="-1" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10003" x="0" y="262" width="401" height="260" frameX="-1" frameY="-2" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10004" x="401" y="262" width="401" height="259" frameX="0" frameY="-3" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10005" x="802" y="262" width="401" height="258" frameX="0" frameY="-4" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10006" x="1203" y="262" width="402" height="255" frameX="0" frameY="-7" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10007" x="1605" y="262" width="401" height="255" frameX="0" frameY="-7" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10008" x="0" y="522" width="401" height="256" frameX="0" frameY="-6" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10009" x="0" y="522" width="401" height="256" frameX="0" frameY="-6" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10010" x="0" y="522" width="401" height="256" frameX="0" frameY="-6" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10011" x="0" y="522" width="401" height="256" frameX="0" frameY="-6" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10012" x="0" y="522" width="401" height="256" frameX="0" frameY="-6" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10013" x="0" y="522" width="401" height="256" frameX="0" frameY="-6" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol instance 10014" x="0" y="522" width="401" height="256" frameX="0" frameY="-6" frameWidth="408" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol left instance 10000" x="401" y="522" width="407" height="256"/>
+	<SubTexture name="ct_cube_anger_lol left instance 10001" x="401" y="522" width="407" height="256"/>
+	<SubTexture name="ct_cube_anger_lol left instance 10002" x="808" y="522" width="401" height="256" frameX="-2" frameY="0" frameWidth="407" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol left instance 10003" x="808" y="522" width="401" height="256" frameX="-2" frameY="0" frameWidth="407" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol left instance 10004" x="808" y="522" width="401" height="256" frameX="-2" frameY="0" frameWidth="407" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol left instance 10005" x="808" y="522" width="401" height="256" frameX="-2" frameY="0" frameWidth="407" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol left instance 10006" x="808" y="522" width="401" height="256" frameX="-2" frameY="0" frameWidth="407" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol left instance 10007" x="808" y="522" width="401" height="256" frameX="-2" frameY="0" frameWidth="407" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol left instance 10008" x="808" y="522" width="401" height="256" frameX="-2" frameY="0" frameWidth="407" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol right instance 10000" x="1209" y="522" width="400" height="256" frameX="-3" frameY="0" frameWidth="403" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol right instance 10001" x="1209" y="522" width="400" height="256" frameX="-3" frameY="0" frameWidth="403" frameHeight="256"/>
+	<SubTexture name="ct_cube_anger_lol right instance 10002" x="1609" y="522" width="403" height="256"/>
+	<SubTexture name="ct_cube_anger_lol right instance 10003" x="1609" y="522" width="403" height="256"/>
+	<SubTexture name="ct_cube_anger_lol right instance 10004" x="1609" y="522" width="403" height="256"/>
+	<SubTexture name="ct_cube_anger_lol right instance 10005" x="1609" y="522" width="403" height="256"/>
+	<SubTexture name="ct_cube_anger_lol right instance 10006" x="1609" y="522" width="403" height="256"/>
+	<SubTexture name="ct_cube_anger_lol right instance 10007" x="1609" y="522" width="403" height="256"/>
+	<SubTexture name="ct_cube_anger_lol right instance 10008" x="1609" y="522" width="403" height="256"/>
+	<SubTexture name="ct_cube_anger_lol up instance 10000" x="0" y="778" width="405" height="262"/>
+	<SubTexture name="ct_cube_anger_lol up instance 10001" x="0" y="778" width="405" height="262"/>
+	<SubTexture name="ct_cube_anger_lol up instance 10002" x="405" y="778" width="402" height="256" frameX="-1" frameY="-6" frameWidth="405" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol up instance 10003" x="405" y="778" width="402" height="256" frameX="-1" frameY="-6" frameWidth="405" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol up instance 10004" x="405" y="778" width="402" height="256" frameX="-1" frameY="-6" frameWidth="405" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol up instance 10005" x="405" y="778" width="402" height="256" frameX="-1" frameY="-6" frameWidth="405" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol up instance 10006" x="405" y="778" width="402" height="256" frameX="-1" frameY="-6" frameWidth="405" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol up instance 10007" x="405" y="778" width="402" height="256" frameX="-1" frameY="-6" frameWidth="405" frameHeight="262"/>
+	<SubTexture name="ct_cube_anger_lol up instance 10008" x="405" y="778" width="402" height="256" frameX="-1" frameY="-6" frameWidth="405" frameHeight="262"/>
+</TextureAtlas>

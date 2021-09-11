@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ct_new_fuck_file.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="CIRT_Idle Down0000" x="0" y="0" width="451" height="296"/>
+	<SubTexture name="CIRT_Idle Down0001" x="451" y="0" width="439" height="237" frameX="-8" frameY="-41" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Down0002" x="890" y="0" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Down0003" x="890" y="0" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Down0004" x="890" y="0" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Down0005" x="890" y="0" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Down0006" x="890" y="0" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Down0007" x="890" y="0" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Down0008" x="890" y="0" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Down0009" x="890" y="0" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0000" x="1313" y="0" width="451" height="296"/>
+	<SubTexture name="CIRT_Idle Idle0001" x="0" y="296" width="433" height="262" frameX="-7" frameY="-21" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0002" x="433" y="296" width="432" height="258" frameX="-8" frameY="-23" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0003" x="865" y="296" width="432" height="256" frameX="-9" frameY="-24" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0004" x="1297" y="296" width="432" height="254" frameX="-9" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0005" x="0" y="558" width="432" height="254" frameX="-9" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0006" x="432" y="558" width="431" height="253" frameX="-11" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0007" x="863" y="558" width="426" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0008" x="1289" y="558" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0009" x="1289" y="558" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0010" x="1289" y="558" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0011" x="1289" y="558" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0012" x="1289" y="558" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0013" x="1289" y="558" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Idle0014" x="1289" y="558" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Left0000" x="0" y="812" width="451" height="296"/>
+	<SubTexture name="CIRT_Idle Left0001" x="451" y="812" width="440" height="260" frameX="-5" frameY="-19" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Left0002" x="891" y="812" width="426" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Left0003" x="891" y="812" width="426" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Left0004" x="891" y="812" width="426" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Left0005" x="891" y="812" width="426" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Left0006" x="891" y="812" width="426" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Left0007" x="891" y="812" width="426" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Left0008" x="891" y="812" width="426" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Left0009" x="891" y="812" width="426" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Right0000" x="1317" y="812" width="451" height="296"/>
+	<SubTexture name="CIRT_Idle Right0001" x="0" y="1108" width="416" height="264" frameX="-16" frameY="-17" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Right0002" x="416" y="1108" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Right0003" x="416" y="1108" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Right0004" x="416" y="1108" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Right0005" x="416" y="1108" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Right0006" x="416" y="1108" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Right0007" x="416" y="1108" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Right0008" x="416" y="1108" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Right0009" x="416" y="1108" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Up0000" x="839" y="1108" width="451" height="296"/>
+	<SubTexture name="CIRT_Idle Up0001" x="1290" y="1108" width="414" height="271" frameX="-19" frameY="-8" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Up0002" x="0" y="1404" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Up0003" x="0" y="1404" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Up0004" x="0" y="1404" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Up0005" x="0" y="1404" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Up0006" x="0" y="1404" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Up0007" x="0" y="1404" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Up0008" x="0" y="1404" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+	<SubTexture name="CIRT_Idle Up0009" x="0" y="1404" width="423" height="253" frameX="-13" frameY="-25" frameWidth="451" frameHeight="296"/>
+</TextureAtlas>

@@ -1,0 +1,3 @@
+Egoism:easy-demon:7
+Challenge Accepted:hard-demon:7
+Anger:extreme-demon:7

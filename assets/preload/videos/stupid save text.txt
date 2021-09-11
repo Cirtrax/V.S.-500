@@ -1,0 +1,16 @@
+/*var video:MP4Handler = new MP4Handler();
+
+					if (SONG.song.toLowerCase() == 'egoism') // Checks if the current week is Tutorial.
+					{
+						video.playMP4(Paths.video('stupidtestvideo'), new PlayState()); 
+						isCutscene = true;
+					}
+					else
+					{
+						new FlxTimer().start(1, function(tmr:FlxTimer)
+						{
+							if (isCutscene)
+								video.onVLCComplete();
+							LoadingState.loadAndSwitchState(new PlayState(), true);
+						});
+					}*/
