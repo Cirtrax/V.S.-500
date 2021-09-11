@@ -100,6 +100,7 @@ class PlayState extends MusicBeatState
 
 	public static var rep:Replay;
 	public static var loadRep:Bool = false;
+	public static var playCutscene:Bool = false;
 	public static var inResults:Bool = false;
 
 	public static var noteBools:Array<Bool> = [false, false, false, false];
@@ -388,6 +389,10 @@ class PlayState extends MusicBeatState
 
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camHUD);
+		if (playCutscene) {
+			camGame.visible = false;
+			camHUD.visible = false;
+		}
 
 		FlxCamera.defaultCameras = [camGame];
 
@@ -1367,8 +1372,19 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'thorns':
 					schoolIntro(doof);
-				//case 'egoism':
-				//	schoolIntro(doof);
+				case 'egoism':
+					if (playCutscene) {
+						FlxTransitionableState.skipNextTransIn = false;
+						FlxTransitionableState.skipNextTransOut = false;
+						LoadingState.loadAndSwitchState(new VideoState("assets/videos/openingCutscene.webm", new PlayState()));
+						FlxG.log.add('FUCKKKKK');
+						playCutscene = false;
+					} else {
+						camHUD.visible = true;
+						camGame.visible = true;
+						startCountdown();
+					}
+
 				default:
 					startCountdown();
 			}
@@ -3419,16 +3435,6 @@ class PlayState extends MusicBeatState
 
 				storyPlaylist.remove(storyPlaylist[0]);
 				
-				//LoadingState.loadAndSwitchState(new PlayState(), true);
-				/*if (curSong.toLowerCase() == 'challenge-accepted')
-					{
-						var video:VideoHandlerMP4 = new VideoHandlerMP4();
-						video.playMP4(Paths.video('stupidtestvideo'), new PlayState(), false, false);
-					}
-					else
-					{
-						LoadingState.loadAndSwitchState(new PlayState(), true);
-					}*/
 
 				if (storyPlaylist.length <= 0)
 				{

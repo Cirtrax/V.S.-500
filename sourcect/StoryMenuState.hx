@@ -366,12 +366,18 @@ class StoryMenuState extends MusicBeatState
 			PlayState.shits = 0;
 			PlayState.goods = 0;
 			PlayState.campaignMisses = 0;
+			switch (StringTools.replace(PlayState.storyPlaylist[0]," ", "-").toLowerCase()) {
+				case 'egoism':
+					PlayState.playCutscene = true;
+			}
 			PlayState.SONG = Song.loadFromJson(poop, PlayState.storyPlaylist[0]);
 			PlayState.storyWeek = curWeek;
 			PlayState.campaignScore = 0;
-
-
 			new FlxTimer().start(1, function(tmr:FlxTimer)
+				{
+					LoadingState.loadAndSwitchState(new PlayState(), true);
+				});
+			/*new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
 					if (curWeek == 0	)
 						{
@@ -382,7 +388,7 @@ class StoryMenuState extends MusicBeatState
 							LoadingState.loadAndSwitchState(new PlayState(), true);	
 						}
 		
-				});
+				});*/
 	
 			/*var video:MP4Handler = new MP4Handler();
 
