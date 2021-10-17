@@ -11,12 +11,13 @@ class Character extends FlxSprite
 {
 	public var animOffsets:Map<String, Array<Dynamic>>;
 	public var debugMode:Bool = false;
+	public var noteSkin:String = 'normal';
 
 	public var isPlayer:Bool = false;
 	public var curCharacter:String = 'bf';
 
 	public var holdTimer:Float = 0;
-
+	public var iconColor:String = "FF50a5eb";
 	public function new(x:Float, y:Float, ?character:String = "bf", ?isPlayer:Bool = false)
 	{
 		super(x, y);
@@ -35,6 +36,7 @@ class Character extends FlxSprite
 		{
 			case 'gf':
 				// GIRLFRIEND CODE
+				noteSkin = 'normal';
 				tex = Paths.getSparrowAtlas('GF_assets','shared',true);
 				frames = tex;
 				animation.addByPrefix('cheer', 'GF Cheer', 24, false);
@@ -210,6 +212,7 @@ class Character extends FlxSprite
 				flipX = true;
 
 			case 'bf':
+				noteSkin = 'normal';
 				var tex = Paths.getSparrowAtlas('BOYFRIEND','shared',true);
 				frames = tex;
 	
@@ -388,17 +391,19 @@ class Character extends FlxSprite
 					// DAD ANIMATION LOADING CODE
 					tex = Paths.getSparrowAtlas('ct/CT_Assets', 'shared');
 					frames = tex;
-					animation.addByPrefix('idle', 'CT Idle Dance', 24);
-					animation.addByPrefix('singUP', 'CT Up Singnote', 24);
-					animation.addByPrefix('singRIGHT', 'CT Pog Singnote', 24);
-					animation.addByPrefix('singDOWN', 'CT Down Singnote', 24);
-					animation.addByPrefix('singLEFT', 'CT Left Singnote', 24);
+					iconColor = 'FF7D7DFF';
+					noteSkin = 'dash';
+					animation.addByPrefix('idle', 'CT Idle Dance', 24, false);
+					animation.addByPrefix('singUP', 'CT Up Singnote', 24, false);
+					animation.addByPrefix('singRIGHT', 'CT Pog Singnote', 24, false);
+					animation.addByPrefix('singDOWN', 'CT Down Singnote', 24, false);
+					animation.addByPrefix('singLEFT', 'CT Left Singnote', 24, false);
 	
-					addOffset('idle', 2, -0);
-					addOffset("singUP", 0, 0);
-					addOffset("singRIGHT", -39, -73);
-					addOffset("singLEFT", 30, 5);
-					addOffset("singDOWN", -52, -104);
+					addOffset('idle', 2, 0);
+                    addOffset("singUP", -18, 139);
+                    addOffset("singRIGHT", -36, -7);
+                    addOffset("singLEFT", 51, 30);
+                    addOffset("singDOWN", -18, -15);
 	
 					playAnim('idle');
 
@@ -406,11 +411,13 @@ class Character extends FlxSprite
 					// DAD ANIMATION LOADING CODE
 					tex = Paths.getSparrowAtlas('ct/ct_angry', 'shared');
 					frames = tex;
-					animation.addByPrefix('idle', 'CTpissed Idle Dance', 24);
-					animation.addByPrefix('singUP', 'CTpissed NOTE UP', 24);
-					animation.addByPrefix('singRIGHT', 'CTpissed NOTE RIGHT', 24);
-					animation.addByPrefix('singDOWN', 'CTpissed NOTE DOWN', 24);
-					animation.addByPrefix('singLEFT', 'CTpissed NOTE LEFT', 24);
+					iconColor = 'FF7D7DFF';
+					noteSkin = 'dash';
+					animation.addByPrefix('idle', 'CTpissed Idle Dance', 9, false);
+					animation.addByPrefix('singUP', 'CTpissed NOTE UP', 18, false);
+					animation.addByPrefix('singRIGHT', 'CTpissed NOTE RIGHT', 18, false);
+					animation.addByPrefix('singDOWN', 'CTpissed NOTE DOWN', 18, false);
+					animation.addByPrefix('singLEFT', 'CTpissed NOTE LEFT', 18, false);
 	
 					addOffset('idle', 2, -0);
 					addOffset("singUP", 0, 80);
@@ -419,6 +426,120 @@ class Character extends FlxSprite
 					addOffset("singDOWN", -27, -51);
 		
 					playAnim('idle');
+
+				case 'passe':
+					// DAD ANIMATION LOADING CODE
+					tex = Paths.getSparrowAtlas('entropic/passe', 'shared');
+					frames = tex;
+					iconColor = 'FF1f1f1f';
+					noteSkin = 'normal';
+					animation.addByPrefix('idle', 'passe idle', 20);
+					animation.addByPrefix('singUP', 'passe up', 24, false);
+					animation.addByPrefix('singRIGHT', 'passe right', 24, false);
+					animation.addByPrefix('singDOWN', 'passe down', 24, false);
+					animation.addByPrefix('singLEFT', 'passe left', 24, false);
+
+					scale.y = 1.3;
+					scale.x = 1.3;
+					
+					addOffset('idle', 2, -0);
+					addOffset("singUP", -11,18);
+					addOffset("singRIGHT", -9, 0);
+					addOffset("singLEFT", 0,0);
+					addOffset("singDOWN", 0, -131);
+		
+					playAnim('idle');	
+
+				case 'passeR':
+					// DAD ANIMATION LOADING CODE
+					tex = Paths.getSparrowAtlas('entropic/passeR', 'shared');
+					frames = tex;
+					iconColor = 'FFFFFFFF';
+					noteSkin = 'normal';
+					animation.addByPrefix('idle', 'passeR idle', 13);
+					animation.addByPrefix('singUP', 'passeR up', 24, false);
+					animation.addByPrefix('singRIGHT', 'passeR right', 24, false);
+					animation.addByPrefix('singDOWN', 'passeR down', 24, false);
+					animation.addByPrefix('singLEFT', 'passeR left', 24, false);
+
+					scale.y = 1.3;
+					scale.x = 1.3;
+						
+					addOffset('idle', 2, -0);
+					addOffset("singUP", -11,18);
+					addOffset("singRIGHT", -9, 0);
+					addOffset("singLEFT", 0,0);
+					addOffset("singDOWN", 0, -131);
+			
+					playAnim('idle');	
+
+			case 'deces':
+					// DAD ANIMATION LOADING CODE
+					tex = Paths.getSparrowAtlas('entropic/deces', 'shared');
+					frames = tex;
+					iconColor = 'FFffc991';
+					noteSkin = 'normal';
+					animation.addByPrefix('idle', 'deces idle', 8);
+					animation.addByPrefix('singUP', 'deces up', 12, false);
+					animation.addByPrefix('singRIGHT', 'deces right', 12, false);
+					animation.addByPrefix('singDOWN', 'deces down', 12, false);
+					animation.addByPrefix('singLEFT', 'deces left', 12, false);
+
+					scale.y = 1.3;
+					scale.x = 1.3;
+						
+					addOffset('idle', 2, -0);
+					addOffset("singUP", 31, 0);
+					addOffset("singRIGHT", 0, 0);
+					addOffset("singLEFT", 13, -60);
+					addOffset("singDOWN", 113, -129);
+			
+					playAnim('idle');				
+			case 'extremeCT':
+					// DAD ANIMATION LOADING CODE
+					tex = Paths.getSparrowAtlas('ct/extremeCt', 'shared');
+					frames = tex;
+					iconColor = 'FF7D7DFF';
+					noteSkin = 'dash';
+					animation.addByPrefix('idle', 'IDLE', 24, false);
+					animation.addByPrefix('singUP', 'UP', 24, false);
+					animation.addByPrefix('singRIGHT', 'RIGHT', 24, false);
+					animation.addByPrefix('singDOWN', 'DOWN', 24, false);
+					animation.addByPrefix('singLEFT', 'LEFT', 24, false);
+	
+					scale.y = 0.8;
+					scale.x = 0.8;
+
+					addOffset('idle', 0, 0);
+                    addOffset("singUP", 56, 21);
+                    addOffset("singRIGHT", 4, -65);
+                    addOffset("singLEFT", 173, -46);
+                    addOffset("singDOWN", 47, -200);
+	
+					playAnim('idle');
+			case 'extremeCTPissed':
+					// DAD ANIMATION LOADING CODE
+					tex = Paths.getSparrowAtlas('ct/extremeCtPissed', 'shared');
+					frames = tex;
+					iconColor = 'FF7D7DFF';
+					noteSkin = 'dash';
+					animation.addByPrefix('idle', 'IDLE ANGRY', 24, false);
+					animation.addByPrefix('singUP', 'UP ANGRY', 24, false);
+					animation.addByPrefix('singRIGHT', 'RIGHT ANGRY', 24, false);
+					animation.addByPrefix('singDOWN', 'DOWN ANGRY', 24, false);
+					animation.addByPrefix('singLEFT', 'LEFT ANGRY', 24, false);
+		
+					scale.y = 0.8;
+					scale.x = 0.8;
+	
+					addOffset('idle', 0, 0);
+					addOffset("singUP", 56, 21);
+					addOffset("singRIGHT", 4, -65);
+					addOffset("singLEFT", 173, -46);
+					addOffset("singDOWN", 47, -200);
+		
+					playAnim('idle');
+
 		}
 
 		dance();

@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="ct_angry.png">
-	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="CTpissed Idle Dance0000" x="10" y="10" width="646" height="391" frameX="0" frameY="-10" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed Idle Dance0001" x="10" y="10" width="646" height="391" frameX="0" frameY="-10" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed Idle Dance0002" x="656" y="10" width="643" height="392" frameX="-3" frameY="-7" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed Idle Dance0003" x="656" y="10" width="643" height="392" frameX="-3" frameY="-7" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed Idle Dance0004" x="1299" y="10" width="635" height="401" frameX="-6" frameY="0" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed Idle Dance0005" x="1299" y="10" width="635" height="401" frameX="-6" frameY="0" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed Idle Dance0006" x="1934" y="10" width="631" height="393" frameX="-4" frameY="-6" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed Idle Dance0007" x="1934" y="10" width="631" height="393" frameX="-4" frameY="-6" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed Idle Dance0008" x="2565" y="10" width="641" height="384" frameX="-2" frameY="-14" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed Idle Dance0009" x="3206" y="10" width="645" height="399" frameX="-4" frameY="-6" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed Idle Dance0010" x="3206" y="10" width="645" height="399" frameX="-4" frameY="-6" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed Idle Dance0011" x="3206" y="10" width="645" height="399" frameX="-4" frameY="-6" frameWidth="649" frameHeight="405"/>
-	<SubTexture name="CTpissed NOTE DOWN0000" x="10" y="411" width="685" height="411" frameX="-4" frameY="0" frameWidth="704" frameHeight="436"/>
-	<SubTexture name="CTpissed NOTE DOWN0001" x="695" y="411" width="695" height="418" frameX="-2" frameY="-7" frameWidth="704" frameHeight="436"/>
-	<SubTexture name="CTpissed NOTE DOWN0002" x="1390" y="411" width="700" height="417" frameX="0" frameY="-13" frameWidth="704" frameHeight="436"/>
-	<SubTexture name="CTpissed NOTE DOWN0003" x="2090" y="411" width="704" height="419" frameX="0" frameY="-17" frameWidth="704" frameHeight="436"/>
-	<SubTexture name="CTpissed NOTE LEFT0000" x="2794" y="411" width="680" height="448" frameX="-24" frameY="0" frameWidth="705" frameHeight="483"/>
-	<SubTexture name="CTpissed NOTE LEFT0001" x="10" y="859" width="687" height="457" frameX="-17" frameY="0" frameWidth="705" frameHeight="483"/>
-	<SubTexture name="CTpissed NOTE LEFT0002" x="697" y="859" width="692" height="465" frameX="-12" frameY="0" frameWidth="705" frameHeight="483"/>
-	<SubTexture name="CTpissed NOTE LEFT0003" x="1389" y="859" width="705" height="483"/>
-	<SubTexture name="CTpissed NOTE RIGHT0000" x="2094" y="859" width="617" height="486" frameX="0" frameY="0" frameWidth="658" frameHeight="508"/>
-	<SubTexture name="CTpissed NOTE RIGHT0001" x="2711" y="859" width="625" height="495" frameX="-12" frameY="0" frameWidth="658" frameHeight="508"/>
-	<SubTexture name="CTpissed NOTE RIGHT0002" x="3336" y="859" width="631" height="503" frameX="-18" frameY="0" frameWidth="658" frameHeight="508"/>
-	<SubTexture name="CTpissed NOTE RIGHT0003" x="10" y="1362" width="634" height="508" frameX="-24" frameY="0" frameWidth="658" frameHeight="508"/>
-	<SubTexture name="CTpissed NOTE UP0000" x="644" y="1362" width="558" height="488" frameX="0" frameY="-17" frameWidth="558" frameHeight="505"/>
-	<SubTexture name="CTpissed NOTE UP0001" x="1202" y="1362" width="555" height="486" frameX="-3" frameY="-13" frameWidth="558" frameHeight="505"/>
-	<SubTexture name="CTpissed NOTE UP0002" x="1757" y="1362" width="547" height="487" frameX="-6" frameY="-10" frameWidth="558" frameHeight="505"/>
-	<SubTexture name="CTpissed NOTE UP0003" x="2304" y="1362" width="545" height="483" frameX="-6" frameY="-8" frameWidth="558" frameHeight="505"/>
-	<SubTexture name="CTpissed NOTE UP0004" x="2849" y="1362" width="540" height="489" frameX="-6" frameY="0" frameWidth="558" frameHeight="505"/>
+	<SubTexture name="CTpissed Idle Dance0000" x="0" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed Idle Dance0001" x="0" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed Idle Dance0002" x="679" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed Idle Dance0003" x="679" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed Idle Dance0004" x="1358" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed Idle Dance0005" x="1358" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed Idle Dance0006" x="2037" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed Idle Dance0007" x="2037" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed Idle Dance0008" x="2716" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed Idle Dance0009" x="3395" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed Idle Dance0010" x="3395" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed Idle Dance0011" x="3395" y="0" width="679" height="412"/>
+	<SubTexture name="CTpissed NOTE DOWN0000" x="0" y="412" width="617" height="353"/>
+	<SubTexture name="CTpissed NOTE DOWN0001" x="617" y="412" width="617" height="353"/>
+	<SubTexture name="CTpissed NOTE DOWN0002" x="1234" y="412" width="617" height="353"/>
+	<SubTexture name="CTpissed NOTE DOWN0003" x="1851" y="412" width="617" height="353"/>
+	<SubTexture name="CTpissed NOTE LEFT0000" x="2468" y="412" width="699" height="440"/>
+	<SubTexture name="CTpissed NOTE LEFT0001" x="3167" y="412" width="699" height="440"/>
+	<SubTexture name="CTpissed NOTE LEFT0002" x="0" y="852" width="699" height="440"/>
+	<SubTexture name="CTpissed NOTE LEFT0003" x="699" y="852" width="699" height="440"/>
+	<SubTexture name="CTpissed NOTE RIGHT0000" x="1398" y="852" width="616" height="473"/>
+	<SubTexture name="CTpissed NOTE RIGHT0001" x="2014" y="852" width="616" height="473"/>
+	<SubTexture name="CTpissed NOTE RIGHT0002" x="2630" y="852" width="616" height="473"/>
+	<SubTexture name="CTpissed NOTE RIGHT0003" x="3246" y="852" width="616" height="473"/>
+	<SubTexture name="CTpissed NOTE UP0000" x="0" y="1325" width="529" height="480"/>
+	<SubTexture name="CTpissed NOTE UP0001" x="529" y="1325" width="529" height="480"/>
+	<SubTexture name="CTpissed NOTE UP0002" x="1058" y="1325" width="529" height="480"/>
+	<SubTexture name="CTpissed NOTE UP0003" x="1587" y="1325" width="529" height="480"/>
+	<SubTexture name="CTpissed NOTE UP0004" x="2116" y="1325" width="529" height="480"/>
 </TextureAtlas>

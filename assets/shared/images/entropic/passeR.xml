@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="passeR.png"><SubTexture name="passeR idle0000" x="0" y="0" width="342" height="528" frameX="0" frameY="0" frameWidth="342" frameHeight="528" />
+<SubTexture name="passeR idle0001" x="342" y="0" width="354" height="532" frameX="0" frameY="0" frameWidth="354" frameHeight="532" />
+<SubTexture name="passeR idle0002" x="696" y="0" width="354" height="530" frameX="0" frameY="0" frameWidth="354" frameHeight="530" />
+<SubTexture name="passeR idle0003" x="1050" y="0" width="354" height="517" frameX="0" frameY="0" frameWidth="354" frameHeight="517" />
+<SubTexture name="passeR idle0004" x="0" y="532" width="354" height="468" frameX="0" frameY="0" frameWidth="354" frameHeight="468" />
+<SubTexture name="passeR idle0005" x="354" y="532" width="354" height="517" frameX="0" frameY="0" frameWidth="354" frameHeight="517" />
+<SubTexture name="passeR idle0006" x="708" y="532" width="354" height="530" frameX="0" frameY="0" frameWidth="354" frameHeight="530" />
+<SubTexture name="passeR down0000" x="1062" y="532" width="306" height="309" frameX="0" frameY="0" frameWidth="306" frameHeight="309" />
+<SubTexture name="passeR down0001" x="0" y="1062" width="303" height="304" frameX="0" frameY="0" frameWidth="303" frameHeight="304" />
+<SubTexture name="passeR down0002" x="303" y="1062" width="300" height="303" frameX="0" frameY="0" frameWidth="300" frameHeight="303" />
+<SubTexture name="passeR left0000" x="603" y="1062" width="281" height="524" frameX="0" frameY="0" frameWidth="281" frameHeight="524" />
+<SubTexture name="passeR left0001" x="884" y="1062" width="283" height="521" frameX="0" frameY="0" frameWidth="283" frameHeight="521" />
+<SubTexture name="passeR left0002" x="0" y="1586" width="283" height="516" frameX="0" frameY="0" frameWidth="283" frameHeight="516" />
+<SubTexture name="passeR right0000" x="283" y="1586" width="302" height="507" frameX="0" frameY="0" frameWidth="302" frameHeight="507" />
+<SubTexture name="passeR right0001" x="585" y="1586" width="304" height="500" frameX="0" frameY="0" frameWidth="304" frameHeight="500" />
+<SubTexture name="passeR right0002" x="889" y="1586" width="310" height="486" frameX="0" frameY="0" frameWidth="310" frameHeight="486" />
+<SubTexture name="passeR up0000" x="0" y="2102" width="310" height="432" frameX="0" frameY="0" frameWidth="310" frameHeight="432" />
+<SubTexture name="passeR up0001" x="310" y="2102" width="317" height="428" frameX="0" frameY="0" frameWidth="317" frameHeight="428" />
+<SubTexture name="passeR up0002" x="627" y="2102" width="325" height="420" frameX="0" frameY="0" frameWidth="325" frameHeight="420" />
+</TextureAtlas>

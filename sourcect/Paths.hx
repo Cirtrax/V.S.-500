@@ -114,6 +114,26 @@ class Paths
 		return 'songs:assets/songs/${songLowercase}/Voices.$SOUND_EXT';
 	}
 
+	inline static public function voicesEX(song:String)
+		{
+			var songLowercase = StringTools.replace(song, " ", "-").toLowerCase();
+				switch (songLowercase) {
+					case 'dad-battle': songLowercase = 'dadbattle';
+					case 'philly-nice': songLowercase = 'philly';
+				}
+			return 'songs:assets/songs/${songLowercase}/VoicesEX.$SOUND_EXT';
+		}
+
+	inline static public function voicesEXcharacter(song:String, char:String)
+	{
+		var songLowercase = StringTools.replace(song, " ", "-").toLowerCase();
+			switch (songLowercase) {
+				case 'dad-battle': songLowercase = 'dadbattle';
+				case 'philly-nice': songLowercase = 'philly';
+			}
+		return 'songs:assets/songs/${songLowercase}/VoicesEX' + char + '.$SOUND_EXT';
+	}
+
 	inline static public function inst(song:String)
 	{
 		var songLowercase = StringTools.replace(song, " ", "-").toLowerCase();
@@ -122,6 +142,26 @@ class Paths
 				case 'philly-nice': songLowercase = 'philly';
 			}
 		return 'songs:assets/songs/${songLowercase}/Inst.$SOUND_EXT';
+	}
+
+	inline static public function instEX(song:String)
+		{
+			var songLowercase = StringTools.replace(song, " ", "-").toLowerCase();
+				switch (songLowercase) {
+					case 'dad-battle': songLowercase = 'dadbattle';
+					case 'philly-nice': songLowercase = 'philly';
+				}
+			return 'songs:assets/songs/${songLowercase}/InstEX.$SOUND_EXT';
+		}
+
+	inline static public function instEXcheck(song:String)
+	{
+		var songLowercase = StringTools.replace(song, " ", "-").toLowerCase();
+			switch (songLowercase) {
+				case 'dad-battle': songLowercase = 'dadbattle';
+				case 'philly-nice': songLowercase = 'philly';
+			}
+		return 'assets/songs/${songLowercase}/InstEX.$SOUND_EXT';
 	}
 
 	inline static public function image(key:String, ?library:String)

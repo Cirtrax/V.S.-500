@@ -79,34 +79,15 @@ class GameOverSubstate extends MusicBeatSubstate
 		{
 			FlxG.sound.playMusic(Paths.music('gameOver' + stageSuffix));
 			startVibin = true;
+			switch(PlayState.SONG.player2)
+			{
+				case 'ct':
+					FlxG.sound.play(Paths.soundRandom('deathlines/deathsounds-500/', 1, 24));
+				case 'ct-angry':
+					FlxG.sound.play(Paths.soundRandom('deathlines/deathsounds-500/', 1, 24));			
+			}
 
 			{
-				if (bf.curCharacter == 'bf')
-					{
-						if (FlxG.random.bool(66))
-						{
-							FlxG.sound.play(Paths.soundRandom('deathlines/deathsounds/', 1, 24));
-						}
-					}
-				else if (bf.curCharacter == 'bf' && PlayState.curStage == 'egoism')
-					
-				if (bf.curCharacter == 'bf')
-					{
-						if (FlxG.random.bool(66))
-						{
-							FlxG.sound.play(Paths.soundRandom('deathlines/deathsounds/', 1, 24));
-						}
-						}
-				else if (bf.curCharacter == 'bf' && PlayState.curStage == 'challenge-accepted')	
-					
-				if (bf.curCharacter == 'bf')
-					{
-						if (FlxG.random.bool(66))
-						{
-							FlxG.sound.play(Paths.soundRandom('deathlines/deathsounds/', 1, 24));
-						}
-						}
-				else if (bf.curCharacter == 'bf' && PlayState.curStage == 'anger')	
 
 				FlxG.sound.playMusic(Paths.music('gameOver' + stageSuffix));
 

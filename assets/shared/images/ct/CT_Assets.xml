@@ -2,52 +2,47 @@
 <TextureAtlas imagePath="CT_Assets.png">
 	<!-- Created with Adobe Animate version 21.0.5.40714 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="CT Down Singnote0000" x="0" y="0" width="522" height="349"/>
-	<SubTexture name="CT Down Singnote0001" x="522" y="0" width="522" height="349"/>
-	<SubTexture name="CT Down Singnote0002" x="1044" y="0" width="522" height="349"/>
-	<SubTexture name="CT Down Singnote0003" x="1566" y="0" width="522" height="349"/>
-	<SubTexture name="CT Down Singnote0004" x="2088" y="0" width="522" height="349"/>
-	<SubTexture name="CT Idle Dance0000" x="2610" y="0" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0001" x="3278" y="0" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0002" x="0" y="412" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0003" x="668" y="412" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0004" x="1336" y="412" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0005" x="2004" y="412" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0006" x="2672" y="412" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0007" x="3340" y="412" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0008" x="0" y="824" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0009" x="668" y="824" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0010" x="1336" y="824" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0011" x="2004" y="824" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0012" x="2672" y="824" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0013" x="3340" y="824" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0014" x="0" y="1236" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0015" x="668" y="1236" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0016" x="1336" y="1236" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0017" x="2004" y="1236" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0018" x="2672" y="1236" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0019" x="3340" y="1236" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0020" x="0" y="1648" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0021" x="0" y="1648" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0022" x="668" y="1648" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0023" x="668" y="1648" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0024" x="1336" y="1648" width="668" height="412"/>
-	<SubTexture name="CT Idle Dance0025" x="2004" y="1648" width="668" height="412"/>
-	<SubTexture name="CT Left Singnote0000" x="2672" y="1648" width="632" height="382"/>
-	<SubTexture name="CT Left Singnote0001" x="3304" y="1648" width="632" height="382"/>
-	<SubTexture name="CT Left Singnote0002" x="0" y="2060" width="632" height="382"/>
-	<SubTexture name="CT Left Singnote0003" x="632" y="2060" width="632" height="382"/>
-	<SubTexture name="CT Left Singnote0004" x="1264" y="2060" width="632" height="382"/>
-	<SubTexture name="CT Left Singnote0005" x="632" y="2060" width="632" height="382"/>
-	<SubTexture name="CT Pog Singnote0000" x="1896" y="2060" width="653" height="318"/>
-	<SubTexture name="CT Pog Singnote0001" x="2549" y="2060" width="653" height="318"/>
-	<SubTexture name="CT Pog Singnote0002" x="3202" y="2060" width="653" height="318"/>
-	<SubTexture name="CT Pog Singnote0003" x="0" y="2442" width="653" height="318"/>
-	<SubTexture name="CT Pog Singnote0004" x="3202" y="2060" width="653" height="318"/>
-	<SubTexture name="CT Up Singnote0000" x="653" y="2442" width="562" height="399"/>
-	<SubTexture name="CT Up Singnote0001" x="1215" y="2442" width="562" height="399"/>
-	<SubTexture name="CT Up Singnote0002" x="1777" y="2442" width="562" height="399"/>
-	<SubTexture name="CT Up Singnote0003" x="2339" y="2442" width="562" height="399"/>
-	<SubTexture name="CT Up Singnote0004" x="2901" y="2442" width="562" height="399"/>
-	<SubTexture name="CT Up Singnote0005" x="2339" y="2442" width="562" height="399"/>
+	<SubTexture name="CT Down Singnote0000" x="0" y="0" width="562" height="411"/>
+	<SubTexture name="CT Down Singnote0001" x="562" y="0" width="562" height="411"/>
+	<SubTexture name="CT Down Singnote0002" x="1124" y="0" width="562" height="411"/>
+	<SubTexture name="CT Down Singnote0003" x="1686" y="0" width="562" height="411"/>
+	<SubTexture name="CT Down Singnote0004" x="2248" y="0" width="562" height="411"/>
+	<SubTexture name="CT Idle Dance0000" x="2810" y="0" width="593" height="346"/>
+	<SubTexture name="CT Idle Dance0001" x="3403" y="0" width="593" height="346"/>
+	<SubTexture name="CT Idle Dance0002" x="3996" y="0" width="593" height="346"/>
+	<SubTexture name="CT Idle Dance0003" x="4589" y="0" width="593" height="346"/>
+	<SubTexture name="CT Idle Dance0004" x="5182" y="0" width="593" height="346"/>
+	<SubTexture name="CT Idle Dance0005" x="5775" y="0" width="593" height="346"/>
+	<SubTexture name="CT Idle Dance0006" x="6368" y="0" width="593" height="346"/>
+	<SubTexture name="CT Idle Dance0007" x="6961" y="0" width="593" height="346"/>
+	<SubTexture name="CT Idle Dance0008" x="7554" y="0" width="593" height="346"/>
+	<SubTexture name="CT Idle Dance0009" x="7554" y="0" width="593" height="346"/>
+	<SubTexture name="CT Idle Dance0010" x="7554" y="0" width="593" height="346"/>
+	<SubTexture name="CT Idle Dance0011" x="7554" y="0" width="593" height="346"/>
+	<SubTexture name="CT Left Singnote0000" x="0" y="411" width="650" height="389"/>
+	<SubTexture name="CT Left Singnote0001" x="650" y="411" width="650" height="389"/>
+	<SubTexture name="CT Left Singnote0002" x="1300" y="411" width="650" height="389"/>
+	<SubTexture name="CT Left Singnote0003" x="1950" y="411" width="650" height="389"/>
+	<SubTexture name="CT Left Singnote0004" x="2600" y="411" width="650" height="389"/>
+	<SubTexture name="CT Left Singnote0005" x="3250" y="411" width="650" height="389"/>
+	<SubTexture name="CT Pog Singnote0000" x="3900" y="411" width="614" height="343"/>
+	<SubTexture name="CT Pog Singnote0001" x="4514" y="411" width="614" height="343"/>
+	<SubTexture name="CT Pog Singnote0002" x="5128" y="411" width="614" height="343"/>
+	<SubTexture name="CT Pog Singnote0003" x="5742" y="411" width="614" height="343"/>
+	<SubTexture name="CT Pog Singnote0004" x="6356" y="411" width="614" height="343"/>
+	<SubTexture name="CT Up Singnote0000" x="6970" y="411" width="550" height="457"/>
+	<SubTexture name="CT Up Singnote0001" x="7520" y="411" width="550" height="457"/>
+	<SubTexture name="CT Up Singnote0002" x="0" y="868" width="550" height="457"/>
+	<SubTexture name="CT Up Singnote0003" x="550" y="868" width="550" height="457"/>
+	<SubTexture name="CT Up Singnote0004" x="1100" y="868" width="550" height="457"/>
+	<SubTexture name="CT Up Singnote0005" x="1650" y="868" width="550" height="457"/>
+	<SubTexture name="CT troll0000" x="2200" y="868" width="1256" height="1075"/>
+	<SubTexture name="CT troll0001" x="3456" y="868" width="1256" height="1075"/>
+	<SubTexture name="CT troll0002" x="4712" y="868" width="1256" height="1075"/>
+	<SubTexture name="CT troll0003" x="5968" y="868" width="1256" height="1075"/>
+	<SubTexture name="CT troll0004" x="0" y="1943" width="1256" height="1075"/>
+	<SubTexture name="CT troll0005" x="1256" y="1943" width="1256" height="1075"/>
+	<SubTexture name="CT troll0006" x="2512" y="1943" width="1256" height="1075"/>
+	<SubTexture name="CT troll0007" x="3768" y="1943" width="1256" height="1075"/>
+	<SubTexture name="CT troll0008" x="5024" y="1943" width="1256" height="1075"/>
 </TextureAtlas>

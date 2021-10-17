@@ -1,10 +1,7 @@
 stage
-halloween
-philly
-limo
-mall
-mallEvil
-school
-schoolEvil
 egoism
 anger
+spire
+spiregrey
+void
+server

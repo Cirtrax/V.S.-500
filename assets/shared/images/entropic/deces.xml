@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="deces.png"><SubTexture name="deces idle0000" x="0" y="0" width="386" height="679" frameX="0" frameY="0" frameWidth="386" frameHeight="679" />
+<SubTexture name="deces idle0001" x="386" y="0" width="389" height="676" frameX="0" frameY="0" frameWidth="389" frameHeight="676" />
+<SubTexture name="deces idle0002" x="775" y="0" width="390" height="672" frameX="0" frameY="0" frameWidth="390" frameHeight="672" />
+<SubTexture name="deces idle0003" x="1165" y="0" width="390" height="669" frameX="0" frameY="0" frameWidth="390" frameHeight="669" />
+<SubTexture name="deces down0000" x="0" y="679" width="414" height="561" frameX="0" frameY="0" frameWidth="414" frameHeight="561" />
+<SubTexture name="deces down0001" x="414" y="679" width="413" height="560" frameX="0" frameY="0" frameWidth="413" frameHeight="560" />
+<SubTexture name="deces down0002" x="827" y="679" width="410" height="554" frameX="0" frameY="0" frameWidth="410" frameHeight="554" />
+<SubTexture name="deces left0000" x="1237" y="679" width="409" height="573" frameX="0" frameY="0" frameWidth="409" frameHeight="573" />
+<SubTexture name="deces left0001" x="0" y="1252" width="410" height="564" frameX="0" frameY="0" frameWidth="410" frameHeight="564" />
+<SubTexture name="deces left0002" x="410" y="1252" width="404" height="559" frameX="0" frameY="0" frameWidth="404" frameHeight="559" />
+<SubTexture name="deces right0000" x="814" y="1252" width="427" height="656" frameX="0" frameY="0" frameWidth="427" frameHeight="656" />
+<SubTexture name="deces right0001" x="1241" y="1252" width="427" height="653" frameX="0" frameY="0" frameWidth="427" frameHeight="653" />
+<SubTexture name="deces right0002" x="0" y="1908" width="426" height="650" frameX="0" frameY="0" frameWidth="426" frameHeight="650" />
+<SubTexture name="deces up0000" x="426" y="1908" width="455" height="615" frameX="0" frameY="0" frameWidth="455" frameHeight="615" />
+<SubTexture name="deces up0001" x="881" y="1908" width="459" height="614" frameX="0" frameY="0" frameWidth="459" frameHeight="614" />
+<SubTexture name="deces up0002" x="1340" y="1908" width="465" height="611" frameX="0" frameY="0" frameWidth="465" frameHeight="611" />
+</TextureAtlas>

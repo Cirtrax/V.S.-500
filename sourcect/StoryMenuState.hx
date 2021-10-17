@@ -27,7 +27,8 @@ class StoryMenuState extends MusicBeatState
 	static function weekData():Array<Dynamic>
 	{
 		return [
-			['Egoism','Challenge Accepted','Anger']
+			['Egoism','Challenge Accepted','Anger'],
+			['Rendevouz','Impasse','A Flaming Encore']
 		];
 	}
 
@@ -37,7 +38,8 @@ class StoryMenuState extends MusicBeatState
 	public static var weekUnlocked:Array<Bool> = [];
 
 	var weekCharacters:Array<Dynamic> = [
-		['ct', 'bf', 'gf']
+		['ct', 'bf', 'gf'],
+		['', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = CoolUtil.coolTextFile(Paths.txt('data/weekNames'));
@@ -414,8 +416,8 @@ class StoryMenuState extends MusicBeatState
 		curDifficulty += change;
 
 		if (curDifficulty < 0)
-			curDifficulty = 2;
-		if (curDifficulty > 2)
+			curDifficulty = 3;
+		if (curDifficulty > 3)
 			curDifficulty = 0;
 
 		sprDifficulty.offset.x = 0;
@@ -430,6 +432,9 @@ class StoryMenuState extends MusicBeatState
 				sprDifficulty.offset.x = 70;
 			case 2:
 				sprDifficulty.animation.play('hard');
+				sprDifficulty.offset.x = 20;
+			case 3:
+				sprDifficulty.animation.play('extreme');
 				sprDifficulty.offset.x = 20;
 		}
 

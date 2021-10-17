@@ -33,7 +33,6 @@ class Note extends FlxSprite
 	public var originColor:Int = 0; // The sustain note's original note's color
 	public var noteSection:Int = 0;
 
-	public var dashNote:Int = 0;
 	public var isAlt:Bool = false;
 
 	public var noteCharterObject:FlxSprite;
@@ -62,17 +61,20 @@ class Note extends FlxSprite
 	public var spotInLine:Int = 0;
 	public var sustainActive:Bool = true;
 
+	public var noteType:String = 'normal';
+
 	public var children:Array<Note> = [];
 
-	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?inCharter:Bool = false, ?isAlt:Bool = false, ?dashNote = 0)
+	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?inCharter:Bool = false, ?isAlt:Bool = false, ?dashNote = 0, noteSkin:String = "normal", ?noteType = "normal")
 	{
 		super();
 
 		if (prevNote == null)
 			prevNote = this;
 
-		this.isAlt = isAlt;
+		this.noteType = noteType;
 		this.prevNote = prevNote;
+		this.isAlt = isAlt;
 	
 		isSustainNote = sustainNote;
 
@@ -110,27 +112,44 @@ class Note extends FlxSprite
 
 		if (inCharter)
 		{
-			frames = Paths.getSparrowAtlas('NOTE_assets');
-
-			for (i in 0...4)
+			switch (noteType)
 			{
-				animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
-				animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
-				animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails
-			}
+				case 'spike':
+					{
+						frames = Paths.getSparrowAtlas('spike', 'shared');
 
+						for (i in 0...4)
+						{
+							animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
+						}
+					}
+				
+				default:
+					frames = Paths.getSparrowAtlas('notes/' + noteSkin, 'shared');
+
+					for (i in 0...4)
+					{
+						animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
+						animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
+						animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails
+					}
+
+			}
 			setGraphicSize(Std.int(width * 0.7));
 			updateHitbox();
 			if(FlxG.save.data.antialiasing)
 				{
 					antialiasing = true;
 				}
+
 		}
 		else
 		{
-			if (PlayState.SONG.noteStyle == null) {
+			if (PlayState.SONG.noteStyle == null)
+			 {
 				switch(PlayState.storyWeek) {case 6: noteTypeCheck = 'pixel';}
-			} else {noteTypeCheck = PlayState.SONG.noteStyle;}
+			 } 
+				else {noteTypeCheck = PlayState.SONG.noteStyle;}
 			
 			switch (noteTypeCheck)
 			{
@@ -148,48 +167,73 @@ class Note extends FlxSprite
 
 					setGraphicSize(Std.int(width * PlayState.daPixelZoom));
 					updateHitbox();
-				default:
-					switch(dashNote)
-					{
-						case 0:
-							{
-							frames = Paths.getSparrowAtlas('NOTE_assets');
 
-							for (i in 0...4)
-							{
-								animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
-								animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
-								animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails
-							}
-
-							setGraphicSize(Std.int(width * 0.7));
-							updateHitbox();
+					default:
+						switch (noteType)
+						{
+							case 'normal':
+								{
+									frames = Paths.getSparrowAtlas('notes/' + noteSkin, 'shared');
+		
+									for (i in 0...4)
+									{
+										animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
+										animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
+										animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails
+									}
+		
+									setGraphicSize(Std.int(width * 0.7));
+									updateHitbox();
+							
+									if(FlxG.save.data.antialiasing)
+										{
+											antialiasing = true;
+										}
+									}
+							case 'dash':
+									{
+										frames = Paths.getSparrowAtlas('notes/dash', 'shared');
+			
+										for (i in 0...4)
+										{
+											animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
+											animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
+											animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails
+										}
+			
+										setGraphicSize(Std.int(width * 0.7));
+										updateHitbox();
+								
+										if(FlxG.save.data.antialiasing)
+											{
+												antialiasing = true;
+											}
+									}
+							case 'spike':
+								{
+									frames = Paths.getSparrowAtlas('spike', 'shared');
+				
+									for (i in 0...4)
+									{
+										animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
+										/*animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
+										animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails*/
+									}
+								}
+							default:
+								frames = Paths.getSparrowAtlas('notes/' + noteSkin, 'shared');
 					
-							if(FlxG.save.data.antialiasing)
-								{
-									antialiasing = true;
-								}
-							}
-						case 1:
-							{
-								frames = Paths.getSparrowAtlas('NOTE_dash');
-	
-								for (i in 0...4)
-								{
-									animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
-									animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
-									animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails
-								}
-	
+									for (i in 0...4)
+									{
+										animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
+										animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
+										animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails
+									}
+								
 								setGraphicSize(Std.int(width * 0.7));
 								updateHitbox();
-						
-								if(FlxG.save.data.antialiasing)
-									{
-										antialiasing = true;
-									}
-							}
-					}	
+								antialiasing = true;
+						}
 				
 				
 			}
@@ -276,28 +320,38 @@ class Note extends FlxSprite
 		}
 
 		if (mustPress)
-		{
-			// ass
-			if (isSustainNote)
 			{
-				if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * 1.5)
-					&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.5))
-					canBeHit = true;
+				// ass
+				if (isSustainNote)
+				{
+					if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * 1.5)
+						&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.5))
+						canBeHit = true;
+					else
+						canBeHit = false;
+				}
 				else
-					canBeHit = false;
+				{
+					switch (noteType) {
+						case 'spike':
+							if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * 0.6)
+								&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.6))
+								canBeHit = true;
+							else
+								canBeHit = false;
+						default:
+							if (strumTime > Conductor.songPosition - Conductor.safeZoneOffset
+								&& strumTime < Conductor.songPosition + Conductor.safeZoneOffset)
+								canBeHit = true;
+							else
+								canBeHit = false;
+					}
+					
+				}
+	
+				if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset * Conductor.timeScale && !wasGoodHit)
+					tooLate = true;
 			}
-			else
-			{
-				if (strumTime > Conductor.songPosition - Conductor.safeZoneOffset
-					&& strumTime < Conductor.songPosition + Conductor.safeZoneOffset)
-					canBeHit = true;
-				else
-					canBeHit = false;
-			}
-
-			if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset * Conductor.timeScale && !wasGoodHit)
-				tooLate = true;
-		}
 		else
 		{
 			canBeHit = false;

@@ -85,6 +85,7 @@ class ChartingState extends MusicBeatState
 	var writingNotesText:FlxText;
 	var highlight:FlxSprite;
 
+
 	var GRID_SIZE:Int = 40;
 
 	var subDivisions:Float = 1;
@@ -2160,8 +2161,9 @@ class ChartingState extends MusicBeatState
 				var daNoteInfo = i[1];
 				var daStrumTime = i[0];
 				var daSus = i[2];
+				var daType = i[3];
 
-				var note:Note = new Note(daStrumTime, daNoteInfo % 4,null,false,true);
+				var note:Note = new Note(daStrumTime, daNoteInfo % 4,null,false,true, daType);
 				note.rawNoteData = daNoteInfo;
 				note.sustainLength = daSus;
 				note.setGraphicSize(Math.floor(GRID_SIZE), Math.floor(GRID_SIZE));
@@ -2479,15 +2481,20 @@ class ChartingState extends MusicBeatState
 		var noteStrum = strum;
 		var noteData = Math.floor(FlxG.mouse.x / GRID_SIZE);
 		var noteSus = 0;
+		
+		var noteType = 'normal';
+		if (FlxG.keys.pressed.Z)
+			noteType = 'spike';
+
 
 		if (n != null)
-			section.sectionNotes.push([n.strumTime, n.noteData, n.sustainLength]);
+			section.sectionNotes.push([n.strumTime, n.noteData, n.sustainLength, n.noteType]);
 		else
-			section.sectionNotes.push([noteStrum, noteData, noteSus]);
+			section.sectionNotes.push([noteStrum, noteData, noteSus, noteType]);
 
-		var thingy = section.sectionNotes[section.sectionNotes.length - 1];
+		var thingy = _song.notes[curSection].sectionNotes[_song.notes[curSection].sectionNotes.length - 1];
 
-		curSelectedNote = thingy;
+		curSelectedNote = thingy;                                 			
 
 		updateGrid();
 		updateNoteUI();

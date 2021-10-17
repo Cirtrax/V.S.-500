@@ -420,6 +420,29 @@ class Judgement extends Option
 	}
 }
 
+class ScreenShakeOption extends Option
+{
+	public function new(desc:String)
+	{
+		super();
+		description = desc;
+	}
+
+	public override function press():Bool
+	{
+		FlxG.save.data.screenShake = !FlxG.save.data.screenShake;
+		
+		display = updateDisplay();
+		return true;
+	}
+
+	private override function updateDisplay():String
+	{
+		return  FlxG.save.data.screenShake ? "Screen Shake On" : "Screen Shake Off";
+	}
+
+}
+
 class FPSOption extends Option
 {
 	public function new(desc:String)

@@ -1,5 +1,6 @@
 class PlayStateChangeables
 {
+    public static var screenShakes:Bool;
     public static var useDownscroll:Bool;
     public static var safeFrames:Int;
     public static var scrollSpeed:Float;
