@@ -108,6 +108,7 @@ class PlayState extends MusicBeatState
 	var halloweenLevel:Bool = false;
 
 	var songLength:Float = 0;
+	var daTime:FlxText;
 	var kadeEngineWatermark:FlxText;
 	private var ctTrail:FlxTrail;
 	#if windows
@@ -120,6 +121,7 @@ class PlayState extends MusicBeatState
 
 	private var vocals:FlxSound;
 	private var secondaryVocals:FlxSound;
+	var resyncingVocals:Bool = true;
 
 	public static var isSM:Bool = false;
 	#if sys
@@ -1415,6 +1417,20 @@ class PlayState extends MusicBeatState
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, FlxTextAlign.CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 
 		add(scoreTxt);
+		
+		daTime = new FlxText(0, strumLine.y - 100, FlxG.width, "0:00", 20);
+		daTime.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		daTime.scrollFactor.set();
+		daTime.borderSize = 1.25;
+		daTime.screenCenter(X);
+		//daTime.x -= 10;	
+		if (PlayStateChangeables.useDownscroll)
+			daTime.y += 115;
+		add(daTime);
+		daTime.alpha = 0;
+
+
+		//cheeky code op lol
 
 		replayTxt = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (PlayStateChangeables.useDownscroll ? 100 : -100), 0, "REPLAY",
 			20);
@@ -1457,6 +1473,7 @@ class PlayState extends MusicBeatState
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
+		daTime.cameras = [camHUD];
 		if (FlxG.save.data.songPosition)
 		{
 			songPosBG.cameras = [camHUD];
@@ -1691,6 +1708,9 @@ class PlayState extends MusicBeatState
 			luaModchart.executeState('start', [songLowercase]);
 		}
 		#end
+		FlxTween.tween(daTime, {alpha: 1}, 1, {ease: FlxEase.cubeInOut});
+		FlxTween.tween(daTime, {y: daTime.y + 80}, 1, {ease: FlxEase.backInOut});
+
 
 		talking = false;
 		startedCountdown = true;
@@ -2090,14 +2110,16 @@ class PlayState extends MusicBeatState
 		curSong = songData.song;
 
 		if (SONG.needsVoices)
-			if (storyDifficulty == 3) {
+			if (storyDifficulty == 3) 
+				{
 				vocals = new FlxSound().loadEmbedded(Paths.voicesEX(PlayState.SONG.song));
 				if (SONG.player2 == 'extremeCT' && SONG.song.toLowerCase() == 'egoism' || SONG.player2 == 'extremeCTPissed' && SONG.song.toLowerCase() == 'challenge accepted' || SONG.player2 == 'extremeCTPissed' && SONG.song.toLowerCase() == 'anger') {
 					secondaryVocals = new FlxSound().loadEmbedded(Paths.voicesEXcharacter(PlayState.SONG.song, 'ct'));
 					vocals = new FlxSound().loadEmbedded(Paths.voicesEXcharacter(PlayState.SONG.song, 'bf'));
 				} else
 					secondaryVocals = new FlxSound();
-			} else {
+			} 
+			else {
 				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
 				secondaryVocals = new FlxSound();
 			}
@@ -2106,7 +2128,6 @@ class PlayState extends MusicBeatState
 			secondaryVocals = new FlxSound();
 		}
 		secondaryVocals.volume = 1;
-
 
 
 		trace('loaded vocals');
@@ -2390,7 +2411,7 @@ class PlayState extends MusicBeatState
 			}
 
 			babyArrow.animation.play('static');
-			babyArrow.x += 50;
+			babyArrow.x += 75;
 			babyArrow.x += ((FlxG.width / 2) * player);
 
 			if (PlayStateChangeables.Optimize)
@@ -2801,8 +2822,6 @@ class PlayState extends MusicBeatState
 			else if (healthBar.percent < 80 && healthBar.percent > 30) 
 				iconP2.animation.play(iconP2Prefix, true, false, 0);
 						
-				
-
 		/* if (FlxG.keys.justPressed.NINE)
 			FlxG.switchState(new Charting()); */
 
@@ -2901,7 +2920,8 @@ class PlayState extends MusicBeatState
 				{
 					FlxG.sound.music._channel.
 			}*/
-			songPositionBar = Conductor.songPosition;
+			if (resyncingVocals)
+				songPositionBar = Conductor.songPosition;
 
 			if (!paused)
 			{
@@ -2916,6 +2936,15 @@ class PlayState extends MusicBeatState
 					// Conductor.songPosition += FlxG.elapsed * 1000;
 					// trace('MISSED FRAME');
 				}
+				var curTime:Float = FlxG.sound.music.time;
+				if(curTime < 0) curTime = 0;
+				//songPercent = (curTime / songLength);
+				var secondsTotal:Int = Math.floor((songLength - curTime) / 1000);
+				if(secondsTotal < 0) secondsTotal = 0;
+				var minutesRemaining:Int = Math.floor(secondsTotal / 60);
+				var secondsRemaining:String = '' + secondsTotal % 60;
+				if(secondsRemaining.length < 2) secondsRemaining = '0' + secondsRemaining; //Dunno how to make it display a zero first in Haxe lol
+				daTime.text = minutesRemaining + ':' + secondsRemaining;
 			}
 
 			// Conductor.lastSongPos = FlxG.sound.music.time;
@@ -3164,7 +3193,7 @@ class PlayState extends MusicBeatState
 
 		if (health <= 0 && !cannotDie)
 		{
-			if (!usedTimeTravel) 
+		if (!usedTimeTravel) 
 			{
 				boyfriend.stunned = true;
 
@@ -3386,40 +3415,72 @@ class PlayState extends MusicBeatState
 								if(SONG.player2 == 'passeR')
 									{
 										health -= 0.017;
+											if (health <= 0.01)
+												{
+													health = 0.01;
+												}
 									}
 								if(SONG.player2 == 'deces')
 									{
 										health -= 0.015;
+											if (health <= 0.01)
+												{
+													health = 0.01;
+												}
 									}	
                             case 3:
                                 dad.playAnim('singRIGHT' + altAnim, true);
 								if(SONG.player2 == 'passeR')
 									{
 										health -= 0.017;
+											if (health <= 0.01)
+												{
+													health = 0.01;
+												}
 									}
 								if(SONG.player2 == 'deces')
 										{
 											health -= 0.015;
+												if (health <= 0.01)
+													{
+														health = 0.01;
+													}
 										}		
                             case 1:
                                 dad.playAnim('singDOWN' + altAnim, true);
 								if(SONG.player2 == 'passeR')
 									{
 										health -= 0.017;
+											if (health <= 0.01)
+												{
+													health = 0.01;
+												}
 									}
 								if(SONG.player2 == 'deces')
 									{
 										health -= 0.015;
+											if (health <= 0.01)
+												{
+													health = 0.01;
+												}
 									}			
                             case 0:
                                 dad.playAnim('singLEFT' + altAnim, true);
 								if(SONG.player2 == 'passeR')
 									{
 										health -= 0.017;	
+											if (health <= 0.01)
+												{
+													health = 0.01;
+												}
 									}
 								if(SONG.player2 == 'deces')
 									{
 										health -= 0.015;
+											if (health <= 0.01)
+												{
+													health = 0.01;
+												}
 									}				
                         }
 
@@ -4896,6 +4957,18 @@ class PlayState extends MusicBeatState
 					FlxG.camera.zoom += 0.02;
 					camHUD.zoom += 0.025;
 				}
+
+			if (curSong.toLowerCase() == 'a flaming encore' && curBeat >= 96 && curBeat < 224 && camZooming && FlxG.camera.zoom < 1.35)
+				{
+					FlxG.camera.zoom += 0.02;
+					camHUD.zoom += 0.015;
+				}
+
+			if (curSong.toLowerCase() == 'a flaming encore' && curBeat >= 288 && curBeat < 416 && camZooming && FlxG.camera.zoom < 1.35)
+				{
+					FlxG.camera.zoom += 0.025;
+					camHUD.zoom += 0.020;
+				}	
 
 			if (camZooming && FlxG.camera.zoom < 1.35 && curBeat % 4 == 0)
 			{
