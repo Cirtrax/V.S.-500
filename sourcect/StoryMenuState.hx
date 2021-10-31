@@ -352,7 +352,6 @@ class StoryMenuState extends MusicBeatState
 			PlayState.isStoryMode = true;
 			selectedWeek = true;
 
-
 			PlayState.storyDifficulty = curDifficulty;
 
 			// adjusting the song name to be compatible
@@ -432,9 +431,6 @@ class StoryMenuState extends MusicBeatState
 				sprDifficulty.offset.x = 70;
 			case 2:
 				sprDifficulty.animation.play('hard');
-				sprDifficulty.offset.x = 20;
-			case 3:
-				sprDifficulty.animation.play('extreme');
 				sprDifficulty.offset.x = 20;
 		}
 

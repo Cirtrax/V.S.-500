@@ -65,6 +65,9 @@ class Note extends FlxSprite
 
 	public var children:Array<Note> = [];
 
+	public var noteShouldMove:Bool = true;
+	public var noteShouldShow:Bool = true;
+
 	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?inCharter:Bool = false, ?isAlt:Bool = false, ?dashNote = 0, noteSkin:String = "normal", ?noteType = "normal")
 	{
 		super();

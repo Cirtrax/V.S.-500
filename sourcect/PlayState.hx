@@ -4868,6 +4868,7 @@ class PlayState extends MusicBeatState
 			resyncVocals();
 		}
 
+		
 		#if windows
 		if (executeModchart && luaModchart != null)
 		{
@@ -4875,6 +4876,15 @@ class PlayState extends MusicBeatState
 			luaModchart.executeState('stepHit', [curStep]);
 		}
 		#end
+
+		if (dad.curCharacter == 'extremeCTPissed')
+			{
+				switch (curStep)
+				{
+					case 1312:
+						FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.8}, 2.8, {ease: FlxEase.expoInOut});
+				}
+			}
 
 		// yes this updates every step.
 		// yes this is bad
@@ -4952,11 +4962,28 @@ class PlayState extends MusicBeatState
 				camHUD.zoom += 0.03;
 			}
 
-			if (curSong.toLowerCase() == 'challenge accepted' && curBeat >= 16 && curBeat < 336 && camZooming && FlxG.camera.zoom < 1.35)
+			if (storyDifficulty != 3)
 				{
-					FlxG.camera.zoom += 0.02;
+					if (curSong.toLowerCase() == 'challenge accepted' && curBeat >= 16 && curBeat < 336 && camZooming && FlxG.camera.zoom < 1.35)
+						{
+							FlxG.camera.zoom += 0.02;
+							camHUD.zoom += 0.025;
+						}
+				}
+
+			
+			if (storyDifficulty == 3 && curSong.toLowerCase() == 'challenge accepted' && curBeat >= 104 && curBeat < 264 && camZooming && FlxG.camera.zoom < 1.35)
+				{
+					FlxG.camera.zoom += 0.03;
 					camHUD.zoom += 0.025;
 				}
+
+			if (storyDifficulty == 3 && curSong.toLowerCase() == 'challenge accepted' && curBeat >= 336 && curBeat < 434 && camZooming && FlxG.camera.zoom < 1.35)
+				{
+					FlxG.camera.zoom += 0.04;
+					camHUD.zoom += 0.035;
+				}	
+
 
 			if (curSong.toLowerCase() == 'a flaming encore' && curBeat >= 96 && curBeat < 224 && camZooming && FlxG.camera.zoom < 1.35)
 				{
