@@ -32,6 +32,10 @@ class CreditState extends MusicBeatState
 
     var bg:FlxSprite;
     var creditsText:FlxSprite;
+<<<<<<< Updated upstream
+=======
+    var bgTop:FlxSprite;
+>>>>>>> Stashed changes
 
     var creditsPage1:FlxTypedGroup<CreditIcon>;
     var textPage1:FlxTypedGroup<FlxSprite>;
@@ -54,6 +58,14 @@ class CreditState extends MusicBeatState
             bg.screenCenter();
             add(bg);
 
+<<<<<<< Updated upstream
+=======
+            bgTop = new FlxSprite().loadGraphic(Paths.image('creds/bgtop'));
+            bgTop.antialiasing = true;
+            bgTop.screenCenter();
+            add(bgTop);
+
+>>>>>>> Stashed changes
             creditsPage1 = new FlxTypedGroup<CreditIcon>();
 		    add(creditsPage1);
         
@@ -89,6 +101,7 @@ class CreditState extends MusicBeatState
                         icon = new CreditIcon(55, 225, 'Maple', 'https://twitter.com/mmmmmmmmmaple');
                         text = new FlxSprite(200, 240).loadGraphic(Paths.image('creds/text/creditMaple'));  
                     case 2:
+<<<<<<< Updated upstream
                         icon = new CreditIcon(55, 355, 'Kazoo', 'https://twitter.com/KazoooTheCat');
                         text = new FlxSprite(200, 370).loadGraphic(Paths.image('creds/text/creditKazoo'));  
                     case 3:
@@ -100,15 +113,36 @@ class CreditState extends MusicBeatState
                     case 5:
                         icon = new CreditIcon(480, 355, 'ADS', 'https://twitter.com/averydoesstuf');
                         text = new FlxSprite(600, 370).loadGraphic(Paths.image('creds/text/creditADS'));      
+=======
+                        icon = new CreditIcon(55, 340, 'Kazoo', 'https://twitter.com/KazoooTheCat');
+                        text = new FlxSprite(200, 370).loadGraphic(Paths.image('creds/text/creditKazoo'));  
+                    case 3:
+                        icon = new CreditIcon(480, 100, 'Shey', 'https://twitter.com/typicalartie');
+                        text = new FlxSprite(630, 120).loadGraphic(Paths.image('creds/text/creditShey'));
+                    case 4:
+                        icon = new CreditIcon(480, 225, 'Sprint', 'https://twitter.com/SDprint3D');
+                        text = new FlxSprite(630, 240).loadGraphic(Paths.image('creds/text/creditSprint'));   
+                    case 5:
+                        icon = new CreditIcon(480, 355, 'ADS', 'https://twitter.com/averydoesstuf');
+                        text = new FlxSprite(630, 370).loadGraphic(Paths.image('creds/text/creditADS'));      
+>>>>>>> Stashed changes
                     case 6:
                         icon = new CreditIcon(870, 100, 'Xyle', 'https://twitter.com/Xyle_GD?s=09');
                         text = new FlxSprite(1000, 120).loadGraphic(Paths.image('creds/text/creditXyle'));
                     case 7:
+<<<<<<< Updated upstream
                         icon = new CreditIcon(870, 225, 'Rock', 'https://twitter.com/Rockwizard55');
                         text = new FlxSprite(1000, 240).loadGraphic(Paths.image('creds/text/creditRock'));   
                     case 8:
                         icon = new CreditIcon(870, 355, 'Raging', 'https://twitter.com/ragingturtlelol');
                         text = new FlxSprite(1000, 370).loadGraphic(Paths.image('creds/text/creditRaging'));      
+=======
+                        icon = new CreditIcon(870, 215, 'Rock', 'https://twitter.com/Rockwizard55');
+                        text = new FlxSprite(1000, 270).loadGraphic(Paths.image('creds/text/creditRock'));   
+                    case 8:
+                        icon = new CreditIcon(855, 355, 'Raging', 'https://twitter.com/ragingturtlelol');
+                        text = new FlxSprite(1000, 390).loadGraphic(Paths.image('creds/text/creditRaging'));      
+>>>>>>> Stashed changes
                     
                     
                 }
@@ -119,49 +153,161 @@ class CreditState extends MusicBeatState
                 creditsPage1.add(icon);
                 textPage1.add(text);
             }
+<<<<<<< Updated upstream
 
+=======
+            
+>>>>>>> Stashed changes
             for (i in 0...12) {
                 var icon:CreditIcon = new CreditIcon();
                 var text:FlxSprite = new FlxSprite();
                 switch (i) {
                     case 0:
+<<<<<<< Updated upstream
                     trace('lol1');
                     
                 }
                 icon.x += FlxG.width * 2;
                 text.x += FlxG.width * 1;
+=======
+                        icon = new CreditIcon(55, 100, 'Nylu', 'https://twitter.com/notnylu');
+                        text = new FlxSprite(200, 120).loadGraphic(Paths.image('creds/text/creditNylu'));
+                    case 1:
+                        icon = new CreditIcon(55, 215, 'R3M', 'https://www.youtube.com/channel/UC4bAah1hK3zhptoFnKMTfcQ');
+                        text = new FlxSprite(200, 240).loadGraphic(Paths.image('creds/text/creditRem'));  
+                    case 2:
+                        icon = new CreditIcon(55, 355, 'Ash', 'https://twitter.com/ash__i_guess_');
+                        text = new FlxSprite(200, 370).loadGraphic(Paths.image('creds/text/creditAsh'));  
+                    case 3:
+                        icon = new CreditIcon(480, 100, 'Sink', 'https://twitter.com/sinksank_');
+                        text = new FlxSprite(625, 140).loadGraphic(Paths.image('creds/text/creditSink'));
+                    case 4:
+                        icon = new CreditIcon(500, 225, 'Mike', 'https://twitter.com/cataclysmguy');
+                        text = new FlxSprite(625, 260).loadGraphic(Paths.image('creds/text/creditMike'));   
+                    case 5:
+                        icon = new CreditIcon(470, 355, 'Darkswe', 'https://twitter.com/zDarkswe');
+                        text = new FlxSprite(600, 390).loadGraphic(Paths.image('creds/text/creditDark'));      
+                      case 6:
+                        icon = new CreditIcon(870, 100, 'Fidy50', 'https://twitter.com/50Fidy');
+                        text = new FlxSprite(1000, 120).loadGraphic(Paths.image('creds/text/creditFidy'));
+                    case 7:
+                        icon = new CreditIcon(870, 225, 'Bortouii', 'https://twitter.com/bortouii');
+                        text = new FlxSprite(980, 240).loadGraphic(Paths.image('creds/text/creditBort'));   
+                    case 8:
+                        icon = new CreditIcon(890, 340, 'Torchiczk', 'https://twitter.com/TorchicZk');
+                        text = new FlxSprite(1000, 370).loadGraphic(Paths.image('creds/text/creditTorch'));      
+                    
+                }
+                icon.x += FlxG.width * 3;
+                text.x += FlxG.width * 3;
+>>>>>>> Stashed changes
                 icon.antialiasing = true;
                 text.antialiasing = true;
                 creditsPage1.add(icon);
                 textPage1.add(text);
             }
+<<<<<<< Updated upstream
 
+=======
+               
+>>>>>>> Stashed changes
             for (i in 0...13) {
                 var icon:CreditIcon = new CreditIcon();
                 var text:FlxSprite = new FlxSprite();
                 switch (i) {
                     case 0:
+<<<<<<< Updated upstream
                         trace('lol2');
                     
                 }
                 icon.x += FlxG.width * 2;
                 text.x += FlxG.width * 1;
+=======
+                        icon = new CreditIcon(55, 100, 'Visummum', 'https://www.youtube.com/channel/UCS8dxyW4AFyR7HvSPob7uFA');
+                        text = new FlxSprite(200, 120).loadGraphic(Paths.image('creds/text/creditVis'));
+                    case 1:
+                        icon = new CreditIcon(55, 235, 'Sley', 'https://twitter.com/SleyGD');
+                        text = new FlxSprite(200, 240).loadGraphic(Paths.image('creds/text/creditSley'));  
+                    case 2:
+                        icon = new CreditIcon(80, 355, 'Crybit', 'https://twitter.com/cry_bit');
+                        text = new FlxSprite(200, 370).loadGraphic(Paths.image('creds/text/creditCry'));  
+                    case 3:
+                        icon = new CreditIcon(480, 100, 'Lav', 'https://twitter.com/OhSoVanilla64');
+                        text = new FlxSprite(600, 120).loadGraphic(Paths.image('creds/text/creditLav'));
+                    case 4:
+                        icon = new CreditIcon(480, 225, 'Niffirg', 'https://twitter.com/n1ffirg');
+                        text = new FlxSprite(600, 240).loadGraphic(Paths.image('creds/text/creditNiffirg'));   
+                    case 5:
+                        icon = new CreditIcon(480, 355, 'IronB', 'https://twitter.com/IronBoi1392');
+                        text = new FlxSprite(600, 370).loadGraphic(Paths.image('creds/text/creditIron'));      
+                    case 6:
+                        icon = new CreditIcon(885, 100, 'Dami', 'https://twitter.com/DamiNation2020');
+                        text = new FlxSprite(1000, 120).loadGraphic(Paths.image('creds/text/creditDami'));
+                    case 7:
+                        icon = new CreditIcon(870, 225, 'Lillbirb', 'https://twitter.com/bortouii');
+                        text = new FlxSprite(1000, 240).loadGraphic(Paths.image('creds/text/creditPooter'));   
+                    case 8:
+                        icon = new CreditIcon(870, 355, 'Dominus', 'https://twitter.com/Domiinuus');
+                        text = new FlxSprite(1000, 370).loadGraphic(Paths.image('creds/text/creditDom'));
+                    
+                }
+                icon.x += FlxG.width * 4;
+                text.x += FlxG.width * 4;
+>>>>>>> Stashed changes
                 icon.antialiasing = true;
                 text.antialiasing = true;
                 creditsPage1.add(icon);
                 textPage1.add(text);
             }
 
+<<<<<<< Updated upstream
             for (i in 0...5) {
+=======
+            for (i in 0...13) {
+>>>>>>> Stashed changes
                 var icon:CreditIcon = new CreditIcon();
                 var text:FlxSprite = new FlxSprite();
                 switch (i) {
                     case 0:
+<<<<<<< Updated upstream
                         trace('lol3');
                     
                 }
                 icon.x += FlxG.width * 2;
                 text.x += FlxG.width * 1;
+=======
+                        icon = new CreditIcon(-520, 0, 'LOL', 'https://twitter.com/500Devs');
+                        icon.setGraphicSize(Std.int(icon.width * 0.3));
+                    case 1:
+                        text = new FlxSprite(665, 375).loadGraphic(Paths.image('creds/text/creditTwitter'));
+                        text.setGraphicSize(Std.int(text.width * 0.9));
+                    case 2:
+                        icon = new CreditIcon(-1200, 100, 'Amor', 'https://twitter.com/AmorAltra');
+                        text = new FlxSprite(150, 26).loadGraphic(Paths.image('creds/text/creditPiss'));
+                    case 3:
+                        icon = new CreditIcon(-1050, 75, 'Scorch', 'https://twitter.com/ScorchVx');
+                    case 4:
+                        icon = new CreditIcon(-900, 100, 'Krit', 'https://twitter.com/kr1t__');
+                    case 5:
+                        icon = new CreditIcon(-1200, 215, 'Mels', 'https://twitter.com/melX0exe');
+                    case 6:
+                        icon = new CreditIcon(-1050, 225, 'Flippy', 'https://twitter.com/FlippyTheReal');
+                    case 7:
+                        icon = new CreditIcon(-900, 235, 'Retro', 'https://twitter.com/RetroUpgrade'); 
+                    case 8:
+                        icon = new CreditIcon(-1200, 380, 'Radley', 'https://twitter.com/RadleyMCT'); 
+                    case 9:
+                        icon = new CreditIcon(-1050, 365, 'Astral', 'https://twitter.com/astr7l'); 
+                    case 10:
+                        icon = new CreditIcon(-900, 365, 'Kaiza', 'https://twitter.com/lysjbn');
+                    case 11:
+                        icon = new CreditIcon(-770, 150, 'Maya', 'https://twitter.com/vMayaa_');
+                    case 12:
+                        icon = new CreditIcon(-770, 330, 'Coms', 'https://twitter.com/Comgamingnz');
+                }
+                icon.x += FlxG.width * 5;
+                text.x += FlxG.width * 5;
+>>>>>>> Stashed changes
                 icon.antialiasing = true;
                 text.antialiasing = true;
                 creditsPage1.add(icon);
@@ -414,6 +560,7 @@ class CreditState extends MusicBeatState
                     }
                 }*/
             }
+<<<<<<< Updated upstream
  
  
      override function beatHit()
@@ -423,3 +570,11 @@ class CreditState extends MusicBeatState
          }
 
 }
+=======
+            override function beatHit()
+            {
+                super.beatHit();
+                
+            }
+        }
+>>>>>>> Stashed changes

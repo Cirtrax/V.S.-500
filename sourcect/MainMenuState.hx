@@ -29,7 +29,11 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 
 	#if !switch
+<<<<<<< Updated upstream
 	var optionShit:Array<String> = ['story mode', 'freeplay', 'donate' , 'options'];
+=======
+	var optionShit:Array<String> = ['story mode', 'freeplay', 'donate' , 'options', 'vault'];
+>>>>>>> Stashed changes
 	#else
 	var optionShit:Array<String> = ['story mode', 'freeplay'];
 	#end
@@ -49,6 +53,12 @@ class MainMenuState extends MusicBeatState
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
 
+<<<<<<< Updated upstream
+=======
+	var daLock:FlxSprite;
+	var selectedLock:Bool = false;
+
+>>>>>>> Stashed changes
 	public static var finishedFunnyMove:Bool = false;
 
 	override function create()
@@ -64,6 +74,7 @@ class MainMenuState extends MusicBeatState
 		}
 
 		persistentUpdate = persistentDraw = true;
+		FlxG.mouse.visible = true;
 
 		var bg:FlxSprite = new FlxSprite(300).loadGraphic(Paths.image('menuBG'));
 		bg.scrollFactor.x = 0;
@@ -119,6 +130,16 @@ class MainMenuState extends MusicBeatState
 		FlxTween.tween(sidebarTwo, {y: sidebarTwo.y + 50}, 1, {ease: FlxEase.expoInOut});
 		add(sidebarTwo);
 
+<<<<<<< Updated upstream
+=======
+		daLock = new FlxSprite(975, 400	).loadGraphic('assets/images/daLock.png');
+		daLock.scrollFactor.x = 0;
+		daLock.scrollFactor.y = 0;
+		daLock.updateHitbox();
+		daLock.setGraphicSize(Std.int(daLock.width * 0.1));
+		daLock.antialiasing = true;
+		add(daLock);
+>>>>>>> Stashed changes
 		
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
@@ -293,6 +314,19 @@ class MainMenuState extends MusicBeatState
 						}
 					});
 				
+<<<<<<< Updated upstream
+=======
+			}
+			if (FlxG.mouse.justPressed && FlxG.mouse.overlaps(daLock)) 
+			{
+				if (FlxG.mouse.justPressed)
+					daLock.scale.set(0.08, 0.08);
+				selectedSomethin = true;
+				FlxG.mouse.visible = false;
+				FlxG.switchState(new VaultMenu());
+				trace("Vault Menu Selected");
+	
+>>>>>>> Stashed changes
 			}
 		}
 

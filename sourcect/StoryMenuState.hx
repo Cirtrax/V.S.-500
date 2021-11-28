@@ -28,7 +28,11 @@ class StoryMenuState extends MusicBeatState
 	{
 		return [
 			['Egoism','Challenge Accepted','Anger'],
+<<<<<<< Updated upstream
 			['Rendevouz','Impasse','A Flaming Encore']
+=======
+			['Rendezvous','Impasse','A Flaming Encore']
+>>>>>>> Stashed changes
 		];
 	}
 
@@ -414,11 +418,27 @@ class StoryMenuState extends MusicBeatState
 	{
 		curDifficulty += change;
 
+<<<<<<< Updated upstream
 		if (curDifficulty < 0)
 			curDifficulty = 3;
 		if (curDifficulty > 3)
 			curDifficulty = 0;
 
+=======
+		switch (curWeek)
+		{
+			case 0,1:
+				if (curDifficulty < 0)
+					curDifficulty = 2;
+				if (curDifficulty > 2)
+					curDifficulty = 0;
+			default:
+				if (curDifficulty < 0)
+					curDifficulty = 3;
+				if (curDifficulty > 3)
+					curDifficulty = 0;
+		}
+>>>>>>> Stashed changes
 		sprDifficulty.offset.x = 0;
 
 		switch (curDifficulty)
@@ -459,6 +479,12 @@ class StoryMenuState extends MusicBeatState
 		if (curWeek < 0)
 			curWeek = weekData().length - 1;
 
+
+		if (curDifficulty == 3 && (curWeek == 0 || curWeek == 1))
+			
+			curDifficulty = 2;
+				
+	
 		var bullShit:Int = 0;
 
 		for (item in grpWeekText.members)

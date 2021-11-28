@@ -9,7 +9,11 @@ class CreditIcon extends FlxSprite
 	 */
 	public var link:String;
 
+<<<<<<< Updated upstream
 	public function new(xPos:Float = 0, yPos:Float = 0, icon:String = 'Avery', ?daLink:String = '')
+=======
+	public function new(xPos:Float = 0, yPos:Float = 0, icon:String = 'Avery', ?daLink:String = 'https://www.youtube.com/watch?v=PXqcHi2fkXI')
+>>>>>>> Stashed changes
 	{
 		super(xPos, yPos);
 		link = daLink;

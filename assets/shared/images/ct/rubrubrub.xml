@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rubrubrub.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="rubrubrub0000" x="10" y="10" width="1280" height="647" frameX="0" frameY="-74" frameWidth="1281" frameHeight="721"/>
+	<SubTexture name="rubrubrub0001" x="1290" y="10" width="1281" height="650" frameX="0" frameY="-71" frameWidth="1281" frameHeight="721"/>
+	<SubTexture name="rubrubrub0002" x="2571" y="10" width="1281" height="657" frameX="0" frameY="-64" frameWidth="1281" frameHeight="721"/>
+	<SubTexture name="rubrubrub0003" x="10" y="667" width="1281" height="668" frameX="0" frameY="-53" frameWidth="1281" frameHeight="721"/>
+	<SubTexture name="rubrubrub0004" x="1291" y="667" width="1281" height="684" frameX="0" frameY="-37" frameWidth="1281" frameHeight="721"/>
+	<SubTexture name="rubrubrub0005" x="2572" y="667" width="1281" height="700" frameX="0" frameY="-21" frameWidth="1281" frameHeight="721"/>
+	<SubTexture name="rubrubrub0006" x="10" y="1367" width="1281" height="712" frameX="0" frameY="-9" frameWidth="1281" frameHeight="721"/>
+	<SubTexture name="rubrubrub0007" x="1291" y="1367" width="1281" height="719" frameX="0" frameY="-2" frameWidth="1281" frameHeight="721"/>
+	<SubTexture name="rubrubrub0008" x="2572" y="1367" width="1280" height="720" frameX="0" frameY="0" frameWidth="1281" frameHeight="721"/>
+</TextureAtlas>

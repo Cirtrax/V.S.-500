@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="passe.png"><SubTexture name="passe idle0000" x="0" y="0" width="351" height="438" frameX="0" frameY="0" frameWidth="351" frameHeight="438" />
 <SubTexture name="passe idle0001" x="351" y="0" width="362" height="455" frameX="0" frameY="0" frameWidth="362" frameHeight="455" />
@@ -25,4 +26,86 @@
 <SubTexture name="passe up0000" x="1076" y="1725" width="332" height="416" frameX="0" frameY="0" frameWidth="332" frameHeight="416" />
 <SubTexture name="passe up0001" x="1408" y="1725" width="325" height="413" frameX="0" frameY="0" frameWidth="325" frameHeight="413" />
 <SubTexture name="passe up0002" x="0" y="2141" width="319" height="415" frameX="0" frameY="0" frameWidth="319" frameHeight="415" />
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="passe.png">
+	<!-- Created with Adobe Animate version 18.0.1.115 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="passe down0000" x="2492" y="6362" width="623" height="527" frameX="0" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0001" x="0" y="5111" width="623" height="531"/>
+	<SubTexture name="passe down0002" x="3115" y="6395" width="605" height="531" frameX="0" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0003" x="2272" y="6889" width="521" height="528" frameX="-79" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0004" x="3547" y="2576" width="529" height="528" frameX="-71" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0005" x="623" y="5423" width="623" height="528" frameX="0" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0006" x="0" y="5642" width="623" height="528" frameX="0" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0007" x="623" y="5951" width="597" height="528" frameX="0" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0008" x="2793" y="6926" width="518" height="528" frameX="-79" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0009" x="1220" y="5951" width="526" height="528" frameX="-71" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0010" x="1246" y="5423" width="623" height="528" frameX="0" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0011" x="1869" y="5861" width="623" height="528" frameX="0" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0012" x="0" y="6170" width="597" height="528" frameX="0" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0013" x="3311" y="6926" width="518" height="528" frameX="-79" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe down0014" x="1746" y="6389" width="526" height="528" frameX="-71" frameY="0" frameWidth="623" frameHeight="531"/>
+	<SubTexture name="passe idle0000" x="0" y="0" width="685" height="710"/>
+	<SubTexture name="passe idle0001" x="685" y="0" width="685" height="710"/>
+	<SubTexture name="passe idle0002" x="2166" y="1194" width="678" height="700" frameX="0" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0003" x="723" y="3195" width="600" height="700" frameX="-78" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0004" x="3493" y="1885" width="596" height="691" frameX="-73" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0005" x="2844" y="1194" width="669" height="691" frameX="0" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0006" x="2844" y="1885" width="649" height="697" frameX="0" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0007" x="796" y="1197" width="649" height="697" frameX="0" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0008" x="3466" y="3183" width="559" height="690" frameX="-78" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0009" x="0" y="4373" width="564" height="690" frameX="-73" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0010" x="1445" y="1197" width="651" height="685" frameX="0" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0011" x="1452" y="1882" width="651" height="685" frameX="0" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0012" x="726" y="2510" width="651" height="685" frameX="0" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0013" x="645" y="3895" width="573" height="685" frameX="-78" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe idle0014" x="3513" y="1194" width="578" height="685" frameX="-73" frameY="0" frameWidth="685" frameHeight="710"/>
+	<SubTexture name="passe left0000" x="1218" y="4385" width="706" height="507" frameX="0" frameY="0" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0001" x="2734" y="3799" width="703" height="512" frameX="0" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0002" x="1963" y="4307" width="703" height="511" frameX="0" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0003" x="2526" y="5831" width="652" height="531" frameX="-43" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0004" x="3178" y="5864" width="652" height="531" frameX="-43" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0005" x="2614" y="4823" width="690" height="504" frameX="0" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0006" x="2666" y="4311" width="690" height="512" frameX="0" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0007" x="3356" y="4311" width="690" height="511" frameX="0" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0008" x="3304" y="5333" width="654" height="531" frameX="-36" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0009" x="564" y="4580" width="654" height="531" frameX="-36" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0010" x="2614" y="5327" width="690" height="504" frameX="0" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0011" x="1924" y="4818" width="690" height="512" frameX="0" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0012" x="3356" y="4822" width="690" height="511" frameX="0" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0013" x="1218" y="4892" width="654" height="531" frameX="-36" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe left0014" x="1872" y="5330" width="654" height="531" frameX="-36" frameY="-7" frameWidth="706" frameHeight="538"/>
+	<SubTexture name="passe right0000" x="1370" y="0" width="803" height="596" frameX="0" frameY="-13" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0001" x="2166" y="601" width="802" height="593" frameX="0" frameY="-8" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0002" x="2968" y="601" width="802" height="593" frameX="0" frameY="-8" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0003" x="2098" y="3093" width="723" height="598" frameX="-79" frameY="-3" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0004" x="2103" y="1894" width="729" height="598" frameX="-73" frameY="-3" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0005" x="2173" y="0" width="796" height="601" frameX="0" frameY="0" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0006" x="1370" y="596" width="796" height="601" frameX="0" frameY="0" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0007" x="2969" y="0" width="796" height="601" frameX="0" frameY="0" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0008" x="1377" y="3168" width="717" height="601" frameX="-79" frameY="0" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0009" x="0" y="3156" width="723" height="601" frameX="-73" frameY="0" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0010" x="2173" y="0" width="796" height="601" frameX="0" frameY="0" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0011" x="1370" y="596" width="796" height="601" frameX="0" frameY="0" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0012" x="2969" y="0" width="796" height="601" frameX="0" frameY="0" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0013" x="1377" y="3168" width="717" height="601" frameX="-79" frameY="0" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0014" x="2103" y="2492" width="723" height="601" frameX="-73" frameY="0" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe right0015" x="0" y="710" width="796" height="601" frameX="0" frameY="0" frameWidth="803" frameHeight="609"/>
+	<SubTexture name="passe up0000" x="0" y="2543" width="725" height="613" frameX="0" frameY="-7" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0001" x="1377" y="2567" width="721" height="601" frameX="0" frameY="-4" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0002" x="2826" y="2582" width="721" height="601" frameX="0" frameY="-4" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0003" x="2094" y="3691" width="640" height="616" frameX="-86" frameY="0" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0004" x="0" y="3757" width="645" height="616" frameX="-81" frameY="0" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0005" x="0" y="1311" width="726" height="616" frameX="0" frameY="0" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0006" x="726" y="1894" width="726" height="616" frameX="0" frameY="0" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0007" x="0" y="1927" width="726" height="616" frameX="0" frameY="0" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0008" x="2094" y="3691" width="640" height="616" frameX="-86" frameY="0" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0009" x="0" y="3757" width="645" height="616" frameX="-81" frameY="0" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0010" x="0" y="1311" width="726" height="616" frameX="0" frameY="0" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0011" x="726" y="1894" width="726" height="616" frameX="0" frameY="0" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0012" x="0" y="1927" width="726" height="616" frameX="0" frameY="0" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0013" x="1323" y="3769" width="640" height="616" frameX="-86" frameY="0" frameWidth="726" frameHeight="620"/>
+	<SubTexture name="passe up0014" x="2821" y="3183" width="645" height="616" frameX="-81" frameY="0" frameWidth="726" frameHeight="620"/>
+>>>>>>> Stashed changes
 </TextureAtlas>

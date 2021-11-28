@@ -101,6 +101,21 @@ class Character extends FlxSprite
 				updateHitbox();
 				antialiasing = false;
 
+			case 'gf-club':
+				// GIRLFRIEND CODE
+				noteSkin = 'normal';
+				tex = Paths.getSparrowAtlas('gf-club','shared', true);
+				frames = tex;
+				animation.addByPrefix('cheer', 'GF Cheer', 24, false);
+				animation.addByIndices('sad', 'gf sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+				animation.addByIndices('danceLeft', 'GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'GF Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+				animation.addByPrefix('scared', 'GF FEAR', 24);
+
+				//loadOffsetFile(curCharacter);
+
+				playAnim('danceRight');
+
 			case 'dad':
 				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('DADDY_DEAREST','shared',true);
@@ -439,6 +454,7 @@ class Character extends FlxSprite
 					animation.addByPrefix('singDOWN', 'passe down', 24, false);
 					animation.addByPrefix('singLEFT', 'passe left', 24, false);
 
+<<<<<<< Updated upstream
 					scale.y = 1.3;
 					scale.x = 1.3;
 					
@@ -447,6 +463,16 @@ class Character extends FlxSprite
 					addOffset("singRIGHT", -9, 0);
 					addOffset("singLEFT", 0,0);
 					addOffset("singDOWN", 0, -131);
+=======
+					/*scale.y = 1.3;
+					scale.x = 1.3;*/
+					
+					addOffset('idle', 0, 0);
+					addOffset("singUP", 75, -20);
+					addOffset("singRIGHT", 50, -40);
+					addOffset("singLEFT", 50, -20);
+					addOffset("singDOWN", 15, -140);
+>>>>>>> Stashed changes
 		
 					playAnim('idle');	
 
@@ -539,6 +565,55 @@ class Character extends FlxSprite
 					addOffset("singDOWN", 47, -200);
 		
 					playAnim('idle');
+<<<<<<< Updated upstream
+=======
+			case 'extremeCTAnger':
+					// DAD ANIMATION LOADING CODE
+					tex = Paths.getSparrowAtlas('ct/extremeCTAnger', 'shared');
+					frames = tex;
+					iconColor = 'FF7D7DFF';
+					noteSkin = 'dash';
+					animation.addByPrefix('idle', 'IDLE', 24, false);
+					animation.addByPrefix('singUP', 'UP', 24, false);
+					animation.addByPrefix('singRIGHT', 'RIGHT', 24, false);
+					animation.addByPrefix('singDOWN', 'DOWN', 24, false);
+					animation.addByPrefix('singLEFT', 'LEFT', 24, false);
+		
+					scale.y = 0.8;
+					scale.x = 0.8;
+	
+					addOffset('idle', 0, 0);
+					addOffset("singUP", 37, 33);
+					addOffset("singRIGHT", 0, -90);
+					addOffset("singLEFT", 27, -29);
+					addOffset("singDOWN", -30, -186);
+		
+					playAnim('idle');
+			
+			case 'rubrub':
+					// DAD ANIMATION LOADING CODE
+					tex = Paths.getSparrowAtlas('entropic/rubrub', 'shared');
+					frames = tex;
+					iconColor = 'FFFFB800';
+					noteSkin = 'dash';
+					animation.addByPrefix('idle', 'idle', 24, false);
+					animation.addByPrefix('singUP', 'up', 24, false);
+					animation.addByPrefix('singRIGHT', 'rightt', 24, false);
+					animation.addByPrefix('singDOWN', 'down', 24);
+					animation.addByPrefix('singLEFT', 'left', 24, false);
+
+					scale.y = 0.9;
+					scale.x = 0.9;
+	
+					addOffset('idle', 2, 0);
+                    addOffset("singUP", 0, 60);
+                    addOffset("singRIGHT", -23, 20);
+                    addOffset("singLEFT", 20, 70);
+                    addOffset("singDOWN", -87, -18);
+	
+					playAnim('idle');	
+
+>>>>>>> Stashed changes
 
 		}
 
@@ -620,7 +695,7 @@ class Character extends FlxSprite
 		{
 			switch (curCharacter)
 			{
-				case 'gf' | 'gf-christmas' | 'gf-car' | 'gf-pixel':
+				case 'gf' | 'gf-club':
 					if (!animation.curAnim.name.startsWith('hair'))
 					{
 						danced = !danced;

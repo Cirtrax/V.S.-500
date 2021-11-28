@@ -1,6 +1,12 @@
 Egoism:easy-demon:1
 Challenge Accepted:hard-demon:1
 Anger:extreme-demon:1
+<<<<<<< Updated upstream
 Impasse:insane-demon:2
 A Flaming Encore:extreme-demon:2
 Burnt Chicken:extreme-demon-extreme:0
+=======
+Rendezvous:medium-demon:2
+Impasse:insane-demon:2
+A Flaming Encore:extreme-demon:2
+>>>>>>> Stashed changes

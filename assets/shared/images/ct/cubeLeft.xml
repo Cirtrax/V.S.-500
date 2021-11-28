@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cubeLeft.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cubeLeft0000" x="10" y="10" width="1280" height="647" frameX="0" frameY="-73" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="cubeLeft0001" x="1290" y="10" width="1280" height="649" frameX="0" frameY="-71" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="cubeLeft0002" x="2570" y="10" width="1280" height="656" frameX="0" frameY="-64" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="cubeLeft0003" x="10" y="666" width="1280" height="668" frameX="0" frameY="-52" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="cubeLeft0004" x="1290" y="666" width="1280" height="684" frameX="0" frameY="-36" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="cubeLeft0005" x="2570" y="666" width="1280" height="700" frameX="0" frameY="-20" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="cubeLeft0006" x="10" y="1366" width="1280" height="711" frameX="0" frameY="-9" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="cubeLeft0007" x="1290" y="1366" width="1280" height="718" frameX="0" frameY="-2" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="cubeLeft0008" x="2570" y="1366" width="1280" height="720"/>
+</TextureAtlas>

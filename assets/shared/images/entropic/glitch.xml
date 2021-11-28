@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="glitch.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="glitchyshit3_gif0000" x="10" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0001" x="10" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0002" x="1290" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0003" x="1290" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0004" x="2570" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0005" x="2570" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0006" x="3850" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0007" x="3850" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0008" x="3850" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0009" x="3850" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0010" x="5130" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0011" x="5130" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0012" x="6410" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0013" x="6410" y="10" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0014" x="10" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0015" x="10" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0016" x="1290" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0017" x="1290" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0018" x="2570" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0019" x="2570" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0020" x="3850" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0021" x="3850" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0022" x="5130" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0023" x="5130" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0024" x="6410" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0025" x="6410" y="730" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0026" x="10" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0027" x="10" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0028" x="1290" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0029" x="1290" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0030" x="2570" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0031" x="2570" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0032" x="3850" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0033" x="3850" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0034" x="5130" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0035" x="5130" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0036" x="6410" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0037" x="6410" y="1450" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0038" x="10" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0039" x="10" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0040" x="1290" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0041" x="1290" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0042" x="2570" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0043" x="2570" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0044" x="3850" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0045" x="3850" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0046" x="5130" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0047" x="5130" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0048" x="6410" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0049" x="6410" y="2170" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0050" x="10" y="2890" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0051" x="10" y="2890" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0052" x="1290" y="2890" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0053" x="1290" y="2890" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0054" x="2570" y="2890" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0055" x="2570" y="2890" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0056" x="3850" y="2890" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0057" x="3850" y="2890" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0058" x="5130" y="2890" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0059" x="5130" y="2890" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0060" x="6410" y="2890" width="1280" height="720"/>
+	<SubTexture name="glitchyshit3_gif0061" x="6410" y="2890" width="1280" height="720"/>
+</TextureAtlas>
