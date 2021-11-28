@@ -2455,11 +2455,11 @@ class PlayState extends MusicBeatState
 				
 				if (gottaHitNote)
 				{
-					swagNote = new Note(daStrumTime, daNoteData, oldNote, false, daType, boyfriend.noteSkin);
+					swagNote = new Note(daStrumTime, daNoteData, oldNote, false, boyfriend.noteSkin, daType);
 				}
 				else
 				{
-					swagNote = new Note(daStrumTime, daNoteData, oldNote, false, daType, dad.noteSkin);
+					swagNote = new Note(daStrumTime, daNoteData, oldNote, false, dad.noteSkin, daType);
 				}
 				if (!gottaHitNote && PlayStateChangeables.Optimize)
 					continue;
