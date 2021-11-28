@@ -4696,7 +4696,7 @@ class PlayState extends MusicBeatState
 
 	function noteMiss(direction:Int = 1, daNote:Note):Void
 	{
-		if (!boyfriend.stunned)
+		if (!boyfriend.stunned && daNote.noteType == 'normal')
 		{
 			//health -= 0.2;
 			if (combo > 5 && gf.animOffsets.exists('sad'))
