@@ -189,7 +189,6 @@ class PlayState extends MusicBeatState
 
 	private var decesT:FlxTrail;
 
-	private var decesT:FlxTrail;
 	private var CTTrail:FlxTrail;
 
 	private var camGame:FlxCamera;
@@ -227,16 +226,7 @@ class PlayState extends MusicBeatState
 	//week 1
 	var monsterBlue:FlxSprite;
 	var monsterRed:FlxSprite;
-	var towerSpire:FlxSprite;
-	var platformSpire:FlxSprite;
-	var towerSpireSpooky:FlxSprite;
-	var platformSpireSpooky:FlxSprite;
 
-	var voidMid:FlxSprite;
-	var voidPlatform:FlxSprite;
-
-<<<<<<< Updated upstream
-=======
 	//week 2
 	var towerSpire:FlxSprite;
 	var platformSpire:FlxSprite;
@@ -254,7 +244,6 @@ class PlayState extends MusicBeatState
 	var robtopSprite:FlxSprite;
 	var cameraFuck:FlxSprite;
 	
->>>>>>> Stashed changes
 	
 	var fc:Bool = true;
 
@@ -984,12 +973,6 @@ class PlayState extends MusicBeatState
 						monsterRed.updateHitbox();
 					}
 				case 'spire':
-<<<<<<< Updated upstream
-					{
-						defaultCamZoom = 0.75;
-						curStage = 'spire';
-						var bg:FlxSprite = new FlxSprite(-675, -500).loadGraphic(Paths.image('entropic/background-spooky'));
-=======
 					{
 						defaultCamZoom = 0.75;
 						curStage = 'spire';
@@ -1022,60 +1005,12 @@ class PlayState extends MusicBeatState
 						defaultCamZoom = 0.75;
 						curStage = 'spire';
 						var bg:FlxSprite = new FlxSprite(-675, -500).loadGraphic(Paths.image('entropic/background-spooky-desat'));
->>>>>>> Stashed changes
 						bg.antialiasing = true;
 						bg.setGraphicSize(Std.int(bg.width * 0.9));
 						bg.scrollFactor.set(0.5, 0.5);
 						bg.active = false;
 						add(bg);
 						
-<<<<<<< Updated upstream
-						var towerSpire:FlxSprite = new FlxSprite(-300, -150).loadGraphic(Paths.image('entropic/tower'));
-						towerSpire.setGraphicSize(Std.int(towerSpire.width * 1.5));
-						towerSpire.updateHitbox();
-						towerSpire.antialiasing = true;
-						towerSpire.scrollFactor.set(0.5, 0.5);
-						towerSpire.active = false;
-						add(towerSpire);
-
-						var platformSpire:FlxSprite = new FlxSprite(-750, -500).loadGraphic(Paths.image('entropic/platform'));
-						platformSpire.setGraphicSize(Std.int(platformSpire.width * 1.1));
-						platformSpire.updateHitbox();
-						platformSpire.antialiasing = true;
-						platformSpire.scrollFactor.set(0.4, 0.8);
-						platformSpire.active = false;
-						add(platformSpire);
-
-					}
-				case 'spiregrey':
-					{
-						defaultCamZoom = 0.75;
-						curStage = 'spire';
-						var bg:FlxSprite = new FlxSprite(-675, -500).loadGraphic(Paths.image('entropic/background-spooky-desat'));
-						bg.antialiasing = true;
-						bg.setGraphicSize(Std.int(bg.width * 0.9));
-						bg.scrollFactor.set(0.5, 0.5);
-						bg.active = false;
-						add(bg);
-						
-						var towerSpireSpooky:FlxSprite = new FlxSprite(-300, -150).loadGraphic(Paths.image('entropic/tower-desat'));
-						towerSpireSpooky.setGraphicSize(Std.int(towerSpireSpooky.width * 1.5));
-						towerSpireSpooky.updateHitbox();
-						towerSpireSpooky.antialiasing = true;
-						towerSpireSpooky.scrollFactor.set(0.5, 0.5);
-						towerSpireSpooky.active = false;
-						add(towerSpireSpooky);
-
-						var platformSpireSpooky:FlxSprite = new FlxSprite(-750, -500).loadGraphic(Paths.image('entropic/platform-desat'));
-						platformSpireSpooky.setGraphicSize(Std.int(platformSpireSpooky.width * 1.1));
-						platformSpireSpooky.updateHitbox();
-						platformSpireSpooky.antialiasing = true;
-						platformSpireSpooky.scrollFactor.set(0.4, 0.8);
-						platformSpireSpooky.active = false;
-						add(platformSpireSpooky);
-
-					}
-=======
 						var towerSpireSpooky:FlxSprite = new FlxSprite(-300, -200).loadGraphic(Paths.image('entropic/tower-desat'));
 						towerSpireSpooky.setGraphicSize(Std.int(towerSpireSpooky.width * 1.5));
 						towerSpireSpooky.updateHitbox();
@@ -1093,7 +1028,6 @@ class PlayState extends MusicBeatState
 						add(platformSpireSpooky);
 
 					}
->>>>>>> Stashed changes
 				case 'void':
 					{
 
@@ -1140,8 +1074,6 @@ class PlayState extends MusicBeatState
 							bg.active = false;
 							add(bg);
 						}
-<<<<<<< Updated upstream
-=======
 
 				case 'extreme':
 						{
@@ -1203,7 +1135,6 @@ class PlayState extends MusicBeatState
 						}
 				
 
->>>>>>> Stashed changes
 				default:
 					{
 						defaultCamZoom = 0.9;
@@ -1337,18 +1268,6 @@ class PlayState extends MusicBeatState
 			case 'extremeCT':
 				dad.x += 40;
 				dad.y += 129;
-<<<<<<< Updated upstream
-				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);	
-			case 'extremeCTPissed':
-				dad.x += 40;
-				dad.y += 129;
-				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);	
-			case 'passe':
-				dad.x += 65;
-				dad.y += 235;
-				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);	
-				FlxTween.tween(dad, {y: 100}, 1.5, {type: FlxTweenType.PINGPONG, ease: FlxEase.quadInOut, loopDelay: 0.1});
-=======
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 			case 'extremeCTPissed':
 				dad.x += 40;
@@ -1363,7 +1282,6 @@ class PlayState extends MusicBeatState
 				dad.y += -120;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);	
 				FlxTween.tween(dad, {y: 130}, 1.5, {type: FlxTweenType.PINGPONG, ease: FlxEase.quadInOut, loopDelay: 0.1});
->>>>>>> Stashed changes
 			case 'passeR':
 				dad.x += 34;
 				dad.y += 150;
@@ -1384,14 +1302,11 @@ class PlayState extends MusicBeatState
 					}
 				}
 				FlxTween.tween(dad, {y: 100}, 1.5, {type: FlxTweenType.PINGPONG, ease: FlxEase.quadInOut, loopDelay: 0.1});
-<<<<<<< Updated upstream
-=======
 			case 'rubrub':
 				dad.x += 140;
 				dad.y += -400;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 
->>>>>>> Stashed changes
 		}
 
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
@@ -1424,28 +1339,17 @@ class PlayState extends MusicBeatState
 				dad.x -= 180;
 			case 'spire':
 				boyfriend.x += 150;
-<<<<<<< Updated upstream
-			case 'spiregrey':
-				boyfriend.x += 150;
-=======
 				dad.x -= 180;
 				dad.y += 100;
 			case 'spiregrey':
 				boyfriend.x += 150;
 				dad.x += 180;
->>>>>>> Stashed changes
 			case 'void':
 				boyfriend.x += 150;	
 				boyfriend.y += 120;	
 				gf.y += 5000;
 			case 'server':
 				boyfriend.x += 150;	
-<<<<<<< Updated upstream
-				boyfriend.y += 100;
-				gf.y += 5000;
-				dad.y += 100;
-				dad.x -= 150;
-=======
 				boyfriend.y += 100; 
 				gf.y += 5000;
 				dad.y += 850;
@@ -1464,7 +1368,6 @@ class PlayState extends MusicBeatState
 						boyfriend.y -= 50;
 						boyfriend.x += 150;
 					}
->>>>>>> Stashed changes
 		}
 
 		if (!PlayStateChangeables.Optimize)
@@ -1479,17 +1382,10 @@ class PlayState extends MusicBeatState
 			add(dad);
 			add(boyfriend);
 
-<<<<<<< Updated upstream
-			if (curStage == 'egoism')
-				add(monsterBlue);
-			if (curStage == 'anger')
-				add(monsterRed);
-=======
 			/*if (curStage == 'egoism')
 				add(monsterBlue);
 			if (curStage == 'anger')
 				add(monsterRed);*/
->>>>>>> Stashed changes
 		}
 
 		switch (curStage)
@@ -2348,14 +2244,10 @@ class PlayState extends MusicBeatState
 			if (storyDifficulty == 3) 
 				{
 				vocals = new FlxSound().loadEmbedded(Paths.voicesEX(PlayState.SONG.song));
-<<<<<<< Updated upstream
-				if (SONG.player2 == 'extremeCT' && SONG.song.toLowerCase() == 'egoism' || SONG.player2 == 'extremeCTPissed' && SONG.song.toLowerCase() == 'challenge accepted' || SONG.player2 == 'extremeCTPissed' && SONG.song.toLowerCase() == 'anger') {
-=======
 				if (SONG.player2 == 'extremeCT' && SONG.song.toLowerCase() == 'egoism' 
 					|| SONG.player2 == 'extremeCTPissed' && SONG.song.toLowerCase() == 'challenge accepted'
 					|| SONG.player2 == 'extremeCTAnger' && SONG.song.toLowerCase() == 'challenge accepted' 
 					|| SONG.player2 == 'extremeCTAnger' && SONG.song.toLowerCase() == 'anger') {
->>>>>>> Stashed changes
 					secondaryVocals = new FlxSound().loadEmbedded(Paths.voicesEXcharacter(PlayState.SONG.song, 'ct'));
 					vocals = new FlxSound().loadEmbedded(Paths.voicesEXcharacter(PlayState.SONG.song, 'bf'));
 				} else
@@ -2653,11 +2545,7 @@ class PlayState extends MusicBeatState
 			}
 
 			babyArrow.animation.play('static');
-<<<<<<< Updated upstream
-			babyArrow.x += 75;
-=======
 			babyArrow.x += 100;
->>>>>>> Stashed changes
 			babyArrow.x += ((FlxG.width / 2) * player);
 
 			if (PlayStateChangeables.Optimize)
@@ -3348,12 +3236,9 @@ class PlayState extends MusicBeatState
 					case 'extremeCTPissed':
 						camFollow.y = dad.getMidpoint().y - 50;
 						camFollow.x = dad.getMidpoint().x;
-<<<<<<< Updated upstream
-=======
 					case 'extremeCTAnger':
 						camFollow.y = dad.getMidpoint().y - 50;
 						camFollow.x = dad.getMidpoint().x;
->>>>>>> Stashed changes
 					case 'passe':
 						camFollow.y = dad.getMidpoint().y - 100;
 						camFollow.x = dad.getMidpoint().x;		
@@ -3362,14 +3247,10 @@ class PlayState extends MusicBeatState
 						camFollow.x = dad.getMidpoint().x;		
 					case 'deces':
 						camFollow.y = dad.getMidpoint().y - 100;
-<<<<<<< Updated upstream
-						camFollow.x = dad.getMidpoint().x;								
-=======
 						camFollow.x = dad.getMidpoint().x;		
 					case 'rubrub':
 						camFollow.y = dad.getMidpoint().y - 100;
 						camFollow.x = dad.getMidpoint().x;					
->>>>>>> Stashed changes
 				}
 				
 			}
@@ -3658,8 +3539,6 @@ class PlayState extends MusicBeatState
 						trace('SHAKING!');
 						}
 
-<<<<<<< Updated upstream
-=======
 						// hurdur shakes on sustains lol
 
 					if (PlayStateChangeables.screenShakes && (SONG.player2 == 'extremeCTPissed') && (daNote.mustPress || daNote.wasGoodHit || daNote.prevNote.wasGoodHit && !daNote.canBeHit))
@@ -3671,7 +3550,6 @@ class PlayState extends MusicBeatState
 						// hurdur extreme shakes on all notes lmao shitcan coding moment
 
 
->>>>>>> Stashed changes
 					if (SONG.notes[Math.floor(curStep / 16)] != null)
 					{
 						if (SONG.notes[Math.floor(curStep / 16)].altAnim)
@@ -3688,27 +3566,14 @@ class PlayState extends MusicBeatState
 								if(SONG.player2 == 'passeR')
 									{
 										health -= 0.017;
-<<<<<<< Updated upstream
-											if (health <= 0.01)
-												{
-													health = 0.01;
-												}
-=======
 										if (health <= 0.01)
 										{
 											health = 0.01;
 										}
->>>>>>> Stashed changes
 									}
 								if(SONG.player2 == 'deces')
 									{
 										health -= 0.015;
-<<<<<<< Updated upstream
-											if (health <= 0.01)
-												{
-													health = 0.01;
-												}
-=======
 										if (health <= 0.01)
 										{
 											health = 0.01;
@@ -3721,35 +3586,20 @@ class PlayState extends MusicBeatState
 										{
 											health = 0.01;
 										}
->>>>>>> Stashed changes
 									}	
                             case 3:
                                 dad.playAnim('singRIGHT' + altAnim, true);
 								if(SONG.player2 == 'passeR')
 									{
 										health -= 0.017;
-<<<<<<< Updated upstream
-											if (health <= 0.01)
-												{
-													health = 0.01;
-												}
-=======
 										if (health <= 0.01)
 										{
 											health = 0.01;
 										}
->>>>>>> Stashed changes
 									}
 								if(SONG.player2 == 'deces')
 										{
 											health -= 0.015;
-<<<<<<< Updated upstream
-												if (health <= 0.01)
-													{
-														health = 0.01;
-													}
-										}		
-=======
 											if (health <= 0.01)
 											{
 												health = 0.01;
@@ -3763,34 +3613,19 @@ class PlayState extends MusicBeatState
 											health = 0.01;
 										}
 									}		
->>>>>>> Stashed changes
                             case 1:
                                 dad.playAnim('singDOWN' + altAnim, true);
 								if(SONG.player2 == 'passeR')
 									{
 										health -= 0.017;
-<<<<<<< Updated upstream
-											if (health <= 0.01)
-												{
-													health = 0.01;
-												}
-=======
 										if (health <= 0.01)
 											{
 												health = 0.01;
 											}
->>>>>>> Stashed changes
 									}
 								if(SONG.player2 == 'deces')
 									{
 										health -= 0.015;
-<<<<<<< Updated upstream
-											if (health <= 0.01)
-												{
-													health = 0.01;
-												}
-									}			
-=======
 										if (health <= 0.01)
 										{
 												health = 0.01;
@@ -3804,34 +3639,19 @@ class PlayState extends MusicBeatState
 											health = 0.01;
 										}
 									}				
->>>>>>> Stashed changes
                             case 0:
                                 dad.playAnim('singLEFT' + altAnim, true);
 								if(SONG.player2 == 'passeR')
 									{
 										health -= 0.017;	
-<<<<<<< Updated upstream
-											if (health <= 0.01)
-												{
-													health = 0.01;
-												}
-=======
 										if (health <= 0.01)
 										{
 											health = 0.01;
 										}
->>>>>>> Stashed changes
 									}
 								if(SONG.player2 == 'deces')
 									{
 										health -= 0.015;
-<<<<<<< Updated upstream
-											if (health <= 0.01)
-												{
-													health = 0.01;
-												}
-									}				
-=======
 										if (health <= 0.01)
 										{
 											health = 0.01;
@@ -3845,7 +3665,6 @@ class PlayState extends MusicBeatState
 											health = 0.01;
 										}
 									}			
->>>>>>> Stashed changes
                         }
 
 					if (FlxG.save.data.cpuStrums)
@@ -5041,7 +4860,11 @@ class PlayState extends MusicBeatState
 
 	function goodNoteHit(note:Note, resetMashViolation = true):Void
 	{
-		if (note.noteType == 'spike') health = 0;
+		if (note.noteType == 'spike') 
+			health = -1;
+		if (note.noteType == 'spike' && note.rating == "miss")
+			trace('lol spike missed, didnt die!');
+
 
 		if (mashing != 0)
 			mashing = 0;
@@ -5058,6 +4881,7 @@ class PlayState extends MusicBeatState
 
 		if (note.rating == "miss")
 			return;
+
 
 		// add newest note to front of notesHitArray
 		// the oldest notes are at the end and are removed first
@@ -5250,9 +5074,6 @@ class PlayState extends MusicBeatState
 				{
 					case 1312:
 						FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.8}, 2.8, {ease: FlxEase.expoInOut});
-<<<<<<< Updated upstream
-				}
-=======
 						FlxTween.tween(boyfriend, {alpha: 0}, 0.7, {ease: FlxEase.expoInOut});
 						FlxTween.tween(gf, {alpha: 0}, 0.7, {ease: FlxEase.expoInOut});
 
@@ -5375,7 +5196,6 @@ class PlayState extends MusicBeatState
 								// lol im a dumbass
 				}
 
->>>>>>> Stashed changes
 			}
 
 		// yes this updates every step.
@@ -5456,19 +5276,13 @@ class PlayState extends MusicBeatState
 
 			if (storyDifficulty != 3)
 				{
-<<<<<<< Updated upstream
-					if (curSong.toLowerCase() == 'challenge accepted' && curBeat >= 16 && curBeat < 336 && camZooming && FlxG.camera.zoom < 1.35)
-=======
 					if (curSong.toLowerCase() == 'challenge accepted' && curBeat >= 16 && curBeat < 112 && camZooming && FlxG.camera.zoom < 1.35)
->>>>>>> Stashed changes
 						{
 							FlxG.camera.zoom += 0.02;
 							camHUD.zoom += 0.025;
 						}
 				}
 
-<<<<<<< Updated upstream
-=======
 			if (storyDifficulty == 3 && curSong.toLowerCase() == 'egoism' && curBeat >= 16 && curBeat < 112 && camZooming && FlxG.camera.zoom < 1.35)
 				{
 					FlxG.camera.zoom += 0.03;
@@ -5487,7 +5301,6 @@ class PlayState extends MusicBeatState
 					camHUD.zoom += 0.025;
 				}	
 
->>>>>>> Stashed changes
 			
 			if (storyDifficulty == 3 && curSong.toLowerCase() == 'challenge accepted' && curBeat >= 104 && curBeat < 264 && camZooming && FlxG.camera.zoom < 1.35)
 				{
@@ -5636,11 +5449,6 @@ class PlayState extends MusicBeatState
 			}
 		}
 	}
-<<<<<<< Updated upstream
-
-
-=======
 	
->>>>>>> Stashed changes
 	var curLight:Int = 0;
 }
