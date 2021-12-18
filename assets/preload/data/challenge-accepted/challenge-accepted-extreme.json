@@ -8412,15 +8412,9 @@
 				"mustHitSection": true
 			}
 		],
-<<<<<<< Updated upstream
-		"player3": "gf",
-		"song": "Challenge Accepted",
-		"stage": "stage",
-=======
 		"gfVersion": "gf-club",
 		"song": "Challenge Accepted",
 		"stage": "extreme",
->>>>>>> Stashed changes
 		"needsVoices": true,
 		"validScore": true,
 		"speed": 2.9,

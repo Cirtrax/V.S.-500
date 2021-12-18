@@ -15,6 +15,7 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup;
 import flixel.input.gamepad.FlxGamepad;
 import flixel.math.FlxPoint;
+import flixel.addons.display.FlxBackdrop;
 import flixel.math.FlxRect;
 import flixel.system.FlxSound;
 import flixel.system.ui.FlxSoundTray;
@@ -46,6 +47,8 @@ class TitleState extends MusicBeatState
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
 	var ngSpr:FlxSprite;
+
+
 
 	var curWacky:Array<String> = [];
 
@@ -112,6 +115,9 @@ class TitleState extends MusicBeatState
 		#end
 	}
 
+	var backdrop:FlxBackdrop;
+	var groundBackdrop:FlxBackdrop;
+
 	var logoBl:FlxSprite;
 	var gfDance:FlxSprite;
 	var danceLeft:Bool = false;
@@ -140,6 +146,16 @@ class TitleState extends MusicBeatState
 			}
 		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
 		logoBl.updateHitbox();
+
+		backdrop = new FlxBackdrop(Paths.image('bgScroll'));
+		backdrop.velocity.set(-150, 0);
+		add(backdrop);
+
+		groundBackdrop = new FlxBackdrop(Paths.image('groundScroll'), 0, 0, true, false, 0, 500);
+		groundBackdrop.velocity.set(-150, 0);
+		groundBackdrop.y += 650;
+		add(groundBackdrop);
+
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
@@ -147,6 +163,7 @@ class TitleState extends MusicBeatState
 		gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
 		gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
 		gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+		gfDance.setGraphicSize(Std.int(gfDance.width * 0.85));
 		if(FlxG.save.data.antialiasing)
 			{
 				gfDance.antialiasing = true;
@@ -154,10 +171,11 @@ class TitleState extends MusicBeatState
 		add(gfDance);
 		add(logoBl);
 
-		titleText = new FlxSprite(100, FlxG.height * 0.8);
+		titleText = new FlxSprite(350, 660);
 		titleText.frames = Paths.getSparrowAtlas('titleEnter');
 		titleText.animation.addByPrefix('idle', "Press Enter to Begin", 24);
 		titleText.animation.addByPrefix('press', "ENTER PRESSED", 24);
+		titleText.setGraphicSize(Std.int(titleText.width * 0.6));
 		if(FlxG.save.data.antialiasing)
 			{
 				titleText.antialiasing = true;

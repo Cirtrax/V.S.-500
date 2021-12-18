@@ -84,7 +84,13 @@ class GameOverSubstate extends MusicBeatSubstate
 				case 'ct':
 					FlxG.sound.play(Paths.soundRandom('deathlines/deathsounds-500/', 1, 24));
 				case 'ct-angry':
-					FlxG.sound.play(Paths.soundRandom('deathlines/deathsounds-500/', 1, 24));			
+					FlxG.sound.play(Paths.soundRandom('deathlines/deathsounds-500/', 1, 24));
+				case 'extremeCT':
+					FlxG.sound.play(Paths.soundRandom('deathlines/deathsounds-500/', 1, 24));
+				case 'extremeCTPissed':
+					FlxG.sound.play(Paths.soundRandom('deathlines/deathsounds-500/', 1, 24));
+				case 'extremeCTAnger':
+					FlxG.sound.play(Paths.soundRandom('deathlines/deathsounds-500/', 1, 24));
 			}
 
 			{

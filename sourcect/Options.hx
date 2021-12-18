@@ -443,6 +443,26 @@ class ScreenShakeOption extends Option
 
 }
 
+class CamMove extends Option
+{
+	public function new(desc:String)
+	{
+		super();
+		description = desc;
+	}
+	public override function press():Bool
+	{
+		FlxG.save.data.cammove = !FlxG.save.data.cammove;
+		display = updateDisplay();
+		return true;
+	}
+
+	private override function updateDisplay():String
+	{
+		return  FlxG.save.data.cammove ? "Camera Movement on" : "Camera Movement off";
+	}
+}
+
 class FPSOption extends Option
 {
 	public function new(desc:String)

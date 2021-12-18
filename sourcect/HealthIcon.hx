@@ -27,12 +27,9 @@ class HealthIcon extends FlxSprite
 		this.char = char;
 		switch (char)
 		{
-<<<<<<< Updated upstream
-=======
 			case 'bf':
 				loadGraphic(Paths.image('icons/bf'), true, 150, 150);
 				animation.add('bf', [0, 1, 2], 0, false, isPlayer);
->>>>>>> Stashed changes
 			case 'ct':
 				loadGraphic(Paths.image('icons/ct'), true, 150, 150);
 				animation.add('ct', [0, 1, 2], 0, false, isPlayer);
@@ -44,14 +41,10 @@ class HealthIcon extends FlxSprite
 				animation.add('extremeCT', [0, 1, 2], 0, false, isPlayer);	
 			case 'extremeCTPissed':
 				loadGraphic(Paths.image('icons/ct-extreme'), true, 150, 150);
-<<<<<<< Updated upstream
-				animation.add('extremeCTPissed', [0, 1, 2], 0, false, isPlayer);	
-=======
 				animation.add('extremeCTPissed', [0, 1, 2], 0, false, isPlayer);
 			case 'extremeCTAnger':
 				loadGraphic(Paths.image('icons/ct-extreme-angry'), true, 150, 150);
 				animation.add('extremeCTAnger', [0, 1, 2], 0, false, isPlayer);	
->>>>>>> Stashed changes
 			case 'passe':	
 				loadGraphic(Paths.image('icons/passe'), true, 150, 150);
 				animation.add('passe', [0, 1, 2], 0, false, isPlayer);
@@ -61,12 +54,6 @@ class HealthIcon extends FlxSprite
 			case 'deces':	
 				loadGraphic(Paths.image('icons/deces'), true, 150, 150);
 				animation.add('deces', [0, 1, 2], 0, false, isPlayer);
-<<<<<<< Updated upstream
-				
-			default:
-				loadGraphic(Paths.image('iconGrid'), true, 150, 150);
-				animation.add('bf', [0, 1, 0], 0, false, isPlayer);
-=======
 			case 'rubrub':	
 				loadGraphic(Paths.image('icons/rubrub'), true, 150, 150);
 				animation.add('rubrub', [0, 1, 2], 0, false, isPlayer);
@@ -74,7 +61,6 @@ class HealthIcon extends FlxSprite
 			default:
 				loadGraphic(Paths.image('iconGrid'), true, 150, 150);
 				//animation.add('bf', [0, 1, 0], 0, false, isPlayer);
->>>>>>> Stashed changes
 				animation.add('bf-car', [0, 1], 0, false, isPlayer);
 				animation.add('bf-christmas', [0, 1], 0, false, isPlayer);
 				animation.add('bf-pixel', [21, 21], 0, false, isPlayer);

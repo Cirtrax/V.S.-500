@@ -48,10 +48,13 @@ class VaultMenu extends MusicBeatState
     var ashFemboy:FlxSprite;
     var cerbFemboy:FlxSprite;
     var doorFuck:FlxSprite;
-    var cyrusPlush:FlxSprite;
+
+    var michigunTribute:FlxSprite;
 
     var vaultInputButton:FlxSprite;
     var grimlockButton:FlxSprite;
+
+    var inImage:Bool = false;
 
 
     override function create()
@@ -180,11 +183,11 @@ class VaultMenu extends MusicBeatState
             doorFuck.alpha = 0;
             add(doorFuck);
 
-            cyrusPlush = new FlxSprite().loadGraphic(Paths.image('vault/cyrusplush'));
-            cyrusPlush.antialiasing = true;
-            cyrusPlush.screenCenter();
-            cyrusPlush.alpha = 0;
-            add(cyrusPlush);
+            michigunTribute = new FlxSprite().loadGraphic(Paths.image('vault/michigun'));
+            michigunTribute.antialiasing = true;
+            michigunTribute.screenCenter();
+            michigunTribute.alpha = 0;
+            add(michigunTribute);
 
         }
 
@@ -192,6 +195,12 @@ class VaultMenu extends MusicBeatState
 
         override function update(elapsed:Float)
             {
+
+            if (FlxG.keys.justPressed.ENTER && inImage)
+                {
+                    LoadingState.loadAndSwitchState(new VaultMenu());
+                }
+               
                 super.update(elapsed);
                 FlxG.mouse.visible = true;
                 
@@ -253,22 +262,12 @@ class VaultMenu extends MusicBeatState
                                 PlayState.campaignScore = 0;
                                 LoadingState.loadAndSwitchState(new PlayState(), true);
                             });
-                        case 'purplecubechallenge':
-                            daDialogueArray("500's challenge? IMPOSSIBLE!");
-                            new FlxTimer().start(2, function(tmr:FlxTimer)
-                                {
-                                    PlayState.storyPlaylist = ['egoism', 'challenge accepted', 'anger'];
-                                    PlayState.isStoryMode = false;
-                                    PlayState.storyDifficulty = 3;
-                                    PlayState.SONG = Song.loadFromJson(StringTools.replace(PlayState.storyPlaylist[0]," ", "-").toLowerCase() + '-extreme', StringTools.replace(PlayState.storyPlaylist[0]," ", "-").toLowerCase());
-                                    PlayState.storyWeek = 11;
-                                    PlayState.campaignScore = 0;
-                                    LoadingState.loadAndSwitchState(new PlayState(), true);
-                                });
                         case 'rubrub':
                             daDialogueArray("RUBRUBRUBRUBRUBRUBRUB");
                         case 'cirtrax':
                             daDialogueArray("You mean Avery?");
+                        case 'niffirg':
+                            daDialogueArray("pubert");
                         case 'bob':
                             daDialogueArray("I heard of them, they are cool!");
                         case 'boyfriend':
@@ -291,12 +290,15 @@ class VaultMenu extends MusicBeatState
 							FlxTween.tween(ashFemboy, {alpha: 0}, 3, {ease: FlxEase.expoInOut});
                             FlxG.sound.play(Paths.sound('vineboom'));
                         case 'sink':
-                            FlxG.sound.play(Paths.sound('tada')); 
-                        case 'cyrus':
-                            daDialogueArray("what the fuck who turned me into into a plushie");
-                            cyrusPlush.alpha = 0.5;
-							FlxTween.tween(cyrusPlush, {alpha: 0}, 5    , {ease: FlxEase.expoInOut});
-                            FlxG.sound.play(Paths.sound('vineboom'));
+                            FlxG.sound.play(Paths.sound('tada'));
+                        case 'troll':
+                            fancyOpenURL("https://www.youtube.com/watch?v=PXqcHi2fkXI");
+                        case 'fivehundreded':
+                            daDialogueArray("Follow us\non Twitter!");
+                            new FlxTimer().start(1.6, function(tmr:FlxTimer)
+                                {
+                                    fancyOpenURL("https://twitter.com/500Devs");      
+                                });
                         case 'cerbera':
                             daDialogueArray("Holy Shit\nFemboy Cerbera");
                             cerbFemboy.alpha = 0.5;
@@ -324,6 +326,25 @@ class VaultMenu extends MusicBeatState
                                 //this is probably a bad idea but whatever
                                 //not like its gameplay its just some shit here for a single event
                             
+                        case 'michigun':
+                            new FlxTimer().start(0.3, function(tmr:FlxTimer)
+                                {
+                                    remove(inputLol2);
+                                    remove(inputLol);
+                                    remove(swagDialogue);
+                                    remove(grimlockButton);    
+                                });
+                           
+                            new FlxTimer().start(0.1, function(tmr:FlxTimer)
+                                {
+                                    FlxTween.tween(michigunTribute, {alpha: 1}, 1, {ease: FlxEase.expoInOut});
+                                    FlxG.sound.playMusic(Paths.music('sounds/silence', 'shared'));	
+                                });
+
+                            new FlxTimer().start(1.1, function(tmr:FlxTimer)
+                                {
+                                    inImage = true;       
+                                });
                         case 'ohsovanilla':
                             daDialogueArray("Gay for ice cream");
                         case 'justifited':
@@ -348,6 +369,8 @@ class VaultMenu extends MusicBeatState
                             daDialogueArray("More like Viprin and Paste!");
                         case 'maple':
                             daDialogueArray("Like the syrup?");
+                        case 'pentacropolis':
+                            daDialogueArray("11 minutes of bad gameplay");
                         case 'sneed':
                             daDialogueArray("Gucci loafers? My favorite!");
                         case 'flippy':
@@ -364,6 +387,8 @@ class VaultMenu extends MusicBeatState
                                 daDialogueArray("I am Grimlock. This is my chamber, stay a while!");
                         case 'ayup':
                                 daDialogueArray('"the best friends i have around, thanks folks -avery"');
+                        case 'chocola':
+                                daDialogueArray('That is not funny.');
                         case 'attempt 0':
                             System.exit(0); // gamecrash lol
                         case 'forbidden':

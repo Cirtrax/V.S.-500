@@ -28,11 +28,7 @@ class StoryMenuState extends MusicBeatState
 	{
 		return [
 			['Egoism','Challenge Accepted','Anger'],
-<<<<<<< Updated upstream
-			['Rendevouz','Impasse','A Flaming Encore']
-=======
 			['Rendezvous','Impasse','A Flaming Encore']
->>>>>>> Stashed changes
 		];
 	}
 
@@ -374,6 +370,8 @@ class StoryMenuState extends MusicBeatState
 			switch (StringTools.replace(PlayState.storyPlaylist[0]," ", "-").toLowerCase()) {
 				case 'egoism':
 					PlayState.playCutscene = true;
+				case 'rendezvous':
+					PlayState.playCutscene = true;
 			}
 			PlayState.SONG = Song.loadFromJson(poop, PlayState.storyPlaylist[0]);
 			PlayState.storyWeek = curWeek;
@@ -418,13 +416,6 @@ class StoryMenuState extends MusicBeatState
 	{
 		curDifficulty += change;
 
-<<<<<<< Updated upstream
-		if (curDifficulty < 0)
-			curDifficulty = 3;
-		if (curDifficulty > 3)
-			curDifficulty = 0;
-
-=======
 		switch (curWeek)
 		{
 			case 0,1:
@@ -438,7 +429,6 @@ class StoryMenuState extends MusicBeatState
 				if (curDifficulty > 3)
 					curDifficulty = 0;
 		}
->>>>>>> Stashed changes
 		sprDifficulty.offset.x = 0;
 
 		switch (curDifficulty)

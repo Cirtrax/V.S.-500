@@ -4,9 +4,5 @@ anger
 spire
 spiregrey
 void
-<<<<<<< Updated upstream
-server
-=======
 server
 extreme
->>>>>>> Stashed changes

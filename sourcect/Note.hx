@@ -115,6 +115,14 @@ class Note extends FlxSprite
 
 		if (inCharter)
 		{
+			frames = Paths.getSparrowAtlas('notes/' + noteSkin, 'shared');
+			var spike = Paths.getSparrowAtlas('spike', 'shared');
+			
+			for(i in spike.frames)
+				{
+					this.frames.pushFrame(i);
+				}
+
 			switch (noteType)
 			{
 				case 'spike':
@@ -124,6 +132,8 @@ class Note extends FlxSprite
 						for (i in 0...4)
 						{
 							animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // fuck
+							animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
+							animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails
 						}
 					}
 				
@@ -219,10 +229,10 @@ class Note extends FlxSprite
 									for (i in 0...4)
 									{
 										animation.addByPrefix(dataColor[i] + 'Scroll', dataColor[i] + ' alone'); // Normal notes
-										/*animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
-										animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails*/
+										animation.addByPrefix(dataColor[i] + 'hold', dataColor[i] + ' hold'); // Hold
+										animation.addByPrefix(dataColor[i] + 'holdend', dataColor[i] + ' tail'); // Tails
 									}
-										setGraphicSize(Std.int(width * 0.7));
+										setGraphicSize(Std.int(width * 0.6));
 										updateHitbox();
 
 									if(FlxG.save.data.antialiasing)

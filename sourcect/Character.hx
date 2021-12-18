@@ -454,16 +454,6 @@ class Character extends FlxSprite
 					animation.addByPrefix('singDOWN', 'passe down', 24, false);
 					animation.addByPrefix('singLEFT', 'passe left', 24, false);
 
-<<<<<<< Updated upstream
-					scale.y = 1.3;
-					scale.x = 1.3;
-					
-					addOffset('idle', 2, -0);
-					addOffset("singUP", -11,18);
-					addOffset("singRIGHT", -9, 0);
-					addOffset("singLEFT", 0,0);
-					addOffset("singDOWN", 0, -131);
-=======
 					/*scale.y = 1.3;
 					scale.x = 1.3;*/
 					
@@ -472,30 +462,29 @@ class Character extends FlxSprite
 					addOffset("singRIGHT", 50, -40);
 					addOffset("singLEFT", 50, -20);
 					addOffset("singDOWN", 15, -140);
->>>>>>> Stashed changes
 		
 					playAnim('idle');	
 
 				case 'passeR':
 					// DAD ANIMATION LOADING CODE
-					tex = Paths.getSparrowAtlas('entropic/passeR', 'shared');
+					tex = Paths.getSparrowAtlas('entropic/altpasse', 'shared');
 					frames = tex;
 					iconColor = 'FFFFFFFF';
 					noteSkin = 'normal';
-					animation.addByPrefix('idle', 'passeR idle', 13);
-					animation.addByPrefix('singUP', 'passeR up', 24, false);
-					animation.addByPrefix('singRIGHT', 'passeR right', 24, false);
-					animation.addByPrefix('singDOWN', 'passeR down', 24, false);
-					animation.addByPrefix('singLEFT', 'passeR left', 24, false);
+					animation.addByPrefix('idle', 'alt passe idle', 24, false);
+					animation.addByPrefix('singUP', 'alt passe up', 24, false);
+					animation.addByPrefix('singLEFT', 'alt passe right', 24, false);
+					animation.addByPrefix('singRIGHT', 'alt passe left', 24, false);
+					animation.addByPrefix('singDOWN', 'alt passe down', 24, false);
 
-					scale.y = 1.3;
-					scale.x = 1.3;
+					scale.y = 0.9;
+					scale.x = 0.9;
 						
 					addOffset('idle', 2, -0);
-					addOffset("singUP", -11,18);
-					addOffset("singRIGHT", -9, 0);
+					addOffset("singUP", -80, 0);
+					addOffset("singRIGHT", -40, 0);
 					addOffset("singLEFT", 0,0);
-					addOffset("singDOWN", 0, -131);
+					addOffset("singDOWN", -53, -124);
 			
 					playAnim('idle');	
 
@@ -505,20 +494,20 @@ class Character extends FlxSprite
 					frames = tex;
 					iconColor = 'FFffc991';
 					noteSkin = 'normal';
-					animation.addByPrefix('idle', 'deces idle', 8);
-					animation.addByPrefix('singUP', 'deces up', 12, false);
-					animation.addByPrefix('singRIGHT', 'deces right', 12, false);
-					animation.addByPrefix('singDOWN', 'deces down', 12, false);
-					animation.addByPrefix('singLEFT', 'deces left', 12, false);
+					animation.addByPrefix('idle', 'deces idle', 24);
+					animation.addByPrefix('singUP', 'deces up', 24, false);
+					animation.addByPrefix('singRIGHT', 'deces right', 24);
+					animation.addByPrefix('singDOWN', 'deces down', 24);
+					animation.addByPrefix('singLEFT', 'deces left', 24, false);
 
-					scale.y = 1.3;
-					scale.x = 1.3;
+					scale.y = 0.9;
+					scale.x = 0.9;
 						
-					addOffset('idle', 2, -0);
-					addOffset("singUP", 31, 0);
-					addOffset("singRIGHT", 0, 0);
-					addOffset("singLEFT", 13, -60);
-					addOffset("singDOWN", 113, -129);
+					addOffset('idle', 0, 0);
+					addOffset("singUP", 0, 0);
+					addOffset("singRIGHT", 103, 14);
+					addOffset("singLEFT", 58, 45);
+					addOffset("singDOWN", 108, -15);
 			
 					playAnim('idle');				
 			case 'extremeCT':
@@ -565,8 +554,6 @@ class Character extends FlxSprite
 					addOffset("singDOWN", 47, -200);
 		
 					playAnim('idle');
-<<<<<<< Updated upstream
-=======
 			case 'extremeCTAnger':
 					// DAD ANIMATION LOADING CODE
 					tex = Paths.getSparrowAtlas('ct/extremeCTAnger', 'shared');
@@ -613,7 +600,6 @@ class Character extends FlxSprite
 	
 					playAnim('idle');	
 
->>>>>>> Stashed changes
 
 		}
 

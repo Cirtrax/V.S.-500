@@ -1,32 +1,3 @@
-<<<<<<< Updated upstream
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="passe.png"><SubTexture name="passe idle0000" x="0" y="0" width="351" height="438" frameX="0" frameY="0" frameWidth="351" frameHeight="438" />
-<SubTexture name="passe idle0001" x="351" y="0" width="362" height="455" frameX="0" frameY="0" frameWidth="362" frameHeight="455" />
-<SubTexture name="passe idle0002" x="713" y="0" width="337" height="445" frameX="0" frameY="0" frameWidth="337" frameHeight="445" />
-<SubTexture name="passe idle0003" x="1050" y="0" width="328" height="436" frameX="0" frameY="0" frameWidth="328" frameHeight="436" />
-<SubTexture name="passe idle0004" x="1378" y="0" width="344" height="432" frameX="0" frameY="0" frameWidth="344" frameHeight="432" />
-<SubTexture name="passe idle0005" x="0" y="455" width="350" height="417" frameX="0" frameY="0" frameWidth="350" frameHeight="417" />
-<SubTexture name="passe idle0006" x="350" y="455" width="337" height="394" frameX="0" frameY="0" frameWidth="337" frameHeight="394" />
-<SubTexture name="passe idle0007" x="687" y="455" width="320" height="417" frameX="0" frameY="0" frameWidth="320" frameHeight="417" />
-<SubTexture name="passe idle0008" x="1007" y="455" width="335" height="432" frameX="0" frameY="0" frameWidth="335" frameHeight="432" />
-<SubTexture name="passe idle0009" x="1342" y="455" width="336" height="436" frameX="0" frameY="0" frameWidth="336" frameHeight="436" />
-<SubTexture name="passe idle0010" x="0" y="891" width="336" height="445" frameX="0" frameY="0" frameWidth="336" frameHeight="445" />
-<SubTexture name="passe idle0011" x="336" y="891" width="368" height="459" frameX="0" frameY="0" frameWidth="368" frameHeight="459" />
-<SubTexture name="passe idle0012" x="704" y="891" width="364" height="438" frameX="0" frameY="0" frameWidth="364" frameHeight="438" />
-<SubTexture name="passe down0000" x="1068" y="891" width="339" height="307" frameX="0" frameY="0" frameWidth="339" frameHeight="307" />
-<SubTexture name="passe down0001" x="1407" y="891" width="326" height="316" frameX="0" frameY="0" frameWidth="326" frameHeight="316" />
-<SubTexture name="passe down0002" x="0" y="1350" width="316" height="309" frameX="0" frameY="0" frameWidth="316" frameHeight="309" />
-<SubTexture name="passe left0000" x="316" y="1350" width="327" height="375" frameX="0" frameY="0" frameWidth="327" frameHeight="375" />
-<SubTexture name="passe left0001" x="643" y="1350" width="327" height="372" frameX="0" frameY="0" frameWidth="327" frameHeight="372" />
-<SubTexture name="passe left0002" x="970" y="1350" width="327" height="371" frameX="0" frameY="0" frameWidth="327" frameHeight="371" />
-<SubTexture name="passe right0000" x="1297" y="1350" width="355" height="373" frameX="0" frameY="0" frameWidth="355" frameHeight="373" />
-<SubTexture name="passe right0001" x="0" y="1725" width="358" height="370" frameX="0" frameY="0" frameWidth="358" frameHeight="370" />
-<SubTexture name="passe right0002" x="358" y="1725" width="358" height="366" frameX="0" frameY="0" frameWidth="358" frameHeight="366" />
-<SubTexture name="passe right0003" x="716" y="1725" width="360" height="366" frameX="0" frameY="0" frameWidth="360" frameHeight="366" />
-<SubTexture name="passe up0000" x="1076" y="1725" width="332" height="416" frameX="0" frameY="0" frameWidth="332" frameHeight="416" />
-<SubTexture name="passe up0001" x="1408" y="1725" width="325" height="413" frameX="0" frameY="0" frameWidth="325" frameHeight="413" />
-<SubTexture name="passe up0002" x="0" y="2141" width="319" height="415" frameX="0" frameY="0" frameWidth="319" frameHeight="415" />
-=======
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="passe.png">
 	<!-- Created with Adobe Animate version 18.0.1.115 -->
@@ -107,5 +78,4 @@
 	<SubTexture name="passe up0012" x="0" y="1927" width="726" height="616" frameX="0" frameY="0" frameWidth="726" frameHeight="620"/>
 	<SubTexture name="passe up0013" x="1323" y="3769" width="640" height="616" frameX="-86" frameY="0" frameWidth="726" frameHeight="620"/>
 	<SubTexture name="passe up0014" x="2821" y="3183" width="645" height="616" frameX="-81" frameY="0" frameWidth="726" frameHeight="620"/>
->>>>>>> Stashed changes
 </TextureAtlas>

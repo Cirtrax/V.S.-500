@@ -5,10 +5,7 @@ ct
 ct-angry
 extremeCT
 extremeCTPissed
-<<<<<<< Updated upstream
-=======
 extremeCTAnger
->>>>>>> Stashed changes
 passe
 passeR
 deces

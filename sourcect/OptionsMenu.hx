@@ -30,7 +30,9 @@ class OptionsMenu extends MusicBeatState
 			new DownscrollOption("Toggle making the notes scroll down rather than up."),
 			new GhostTapOption("Toggle counting pressing a directional input when no arrow is there as a miss."),
 			new Judgement("Customize your Hit Timings. (LEFT or RIGHT)"),
+			new CamMove("Makes the camera move to the notes you or your opponent presses."),
 			new ScreenShakeOption("Choose whether the screen shakes or not."),
+
 			#if desktop
 			new FPSCapOption("Change your FPS Cap."),
 			#end
